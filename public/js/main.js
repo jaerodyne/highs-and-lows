@@ -15,6 +15,7 @@ var myChart = new Chart(ctx, {
 			backgroundColor: 'rgba(36,36,36,1)',
 			borderColor: [
 				'rgba(255,99,132,1)',
+				'rgba(36,36,36,1)'
 			],
 			borderWidth: 3,
 			data: [150, 104, 102, 95, 162, 106, 120, 114, 172, 114, 138, 108, 145],
@@ -88,6 +89,12 @@ var myChart = new Chart(ctx, {
 				}
 			}]
 		},
+		title: {
+      display: true,
+      fontColor: 'rgba(36,36,36,0.8)',
+      fontSize: 24,
+      text: 'Highs and Lows as told by tempo markings.'
+    },
     tooltips: {
       backgroundColor: 'rgba(216,237,255,0.8)',
       bodyFontColor: 'rgba(36,36,36,0.8)',
