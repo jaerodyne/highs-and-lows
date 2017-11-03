@@ -57,7 +57,7 @@ var myChart = new Chart(ctx, {
 				left: 5,
 				right: 15,
 				top: 0,
-				bottom: 15
+				bottom: 27
 			}
 		},
 		legend: {
