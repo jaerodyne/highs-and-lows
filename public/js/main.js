@@ -1,7 +1,8 @@
 // Initialize chart in html doc
 var ctx = document.getElementById("myChart");
+Chart.defaults.global.defaultFontFamily ='Permanent Marker';
 Chart.defaults.global.defaultFontStyle = 'bold';
-Chart.defaults.global.defaultFontSize = 14;
+Chart.defaults.global.defaultFontSize = 20;
 
 var progress = document.getElementById('animationProgress');
 var moods = ["Straight Up Rock", "Rock", "Laid-Back Chill", "Groove", "Phasered Out Rock", "Latin-like Dance Rock?", "Raw Rock", "Acoustic Rock Journey", "Needs More Drums", "Lonely Guitar Intro", "Reggae-Influenced Shuffle Rock", "Rock Punk Rock", "Finale"];
@@ -100,8 +101,9 @@ var myChart = new Chart(ctx, {
       bodyFontColor: 'rgba(36,36,36,0.8)',
       callbacks: {
 		    label: function(tooltipItem, data) {
+		    	let musicNote = '\u2669'
 	        let value = data.datasets[tooltipItem.datasetIndex].data[tooltipItem.index];
-	          return ' = ' + value;
+	          return musicNote + '= ' + value;
 	      },
         footer: function(tooltipItems, data) {
 				 return 'Mood: ' + moods[tooltipItems[0].index];
@@ -109,6 +111,11 @@ var myChart = new Chart(ctx, {
       },
       caretPadding: 10,
       caretSize: 7,
+      custom: function(tooltip) {
+        if (!tooltip) return;
+        // disable displaying the color box;
+        tooltip.displayColors = false;
+      },
       footerFontColor: 'rgba(36,36,36,0.8)',
       footerFontStyle: 'bold',
       titleFontColor: 'rgba(255,99,132,1)',
