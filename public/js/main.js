@@ -123,3 +123,8 @@ var myChart = new Chart(ctx, {
     }
 	}
 });
+
+ctx.onclick = function(evt){
+   var activePoints = myChart.getElementsAtEvent(evt);
+   console.log("click")
+};
