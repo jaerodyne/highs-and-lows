@@ -1,0 +1,32 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Permanent Marker';
+  font-size: 32px;
+}
+
+.lyrics-nav {
+  display: block;
+  text-align: right;
+  width: 50%;
+}
+
+/*.lyrics-nav a {
+	display: block;
+  float: left;
+  clear: left;
+}*/
+
+.lyrics-container {
+  float: right;
+  clear: right;
+  width: 50%;
+}
+
+pre.lyrics {
+  /*display: block;*/
+  white-space: pre-line;
+  margin: 1em 0 0 1em;
+  text-align: left;
+  font-family: 'Permanent Marker';
+}
