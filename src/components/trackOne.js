@@ -166,23 +166,23 @@ class TrackOne extends Component{
       <div>
       	<div className="lyrics-nav">
 	        <Link activeClass="active" to="verseOne" spy={true} smooth={true} duration={250} containerId="containerElement">
-	          Verse 1
+	          Verse 1 / 
 	        </Link>
 
 	        <Link activeClass="active" to="verseTwo" spy={true} smooth={true} duration={250} containerId="containerElement">
-	          Verse 2
+	          Verse 2 /
 	        </Link>
 
 	        <Link activeClass="active" to="chorus" spy={true} smooth={true} duration={250} containerId="containerElement">
-	          Chorus
+	          Chorus / 
 	        </Link>
 
 	        <Link activeClass="active" to="verseThree" spy={true} smooth={true} duration={250} containerId="containerElement">
-	          Verse 3
+	          Verse 3 / 
 	        </Link>
 
 	        <Link activeClass="active" to="bridge" spy={true} smooth={true} duration={250} containerId="containerElement">
-	          Bridge
+	          Bridge / 
 	        </Link>
 
 	        <Link activeClass="active" to="outro" spy={true} smooth={true} duration={250} containerId="containerElement">
@@ -190,14 +190,7 @@ class TrackOne extends Component{
 	        </Link>
 	      </div>
         
-        <div className="lyrics-container">
-        <Element name="lyricsText" className="element" id="containerElement" style={{
-        	display: 'block',
-          position: 'absolute',
-          height:'600px',
-          overflow:'scroll',
-          marginBottom: '100px'
-        }}>
+        <Element name="lyricsText" className="element" id="containerElement">
 
           <Element name="verseOne" style={{
             marginBottom: '230px'
@@ -248,7 +241,6 @@ class TrackOne extends Component{
           </Element>
 
         </Element>
-        </div>
       </div>
     );
   }
