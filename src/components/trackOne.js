@@ -5,8 +5,7 @@ import '../index.css';
 class TrackOne extends Component{
 
   constructor (props){
-      super(props);
-      this.scrollToTop = this.scrollToTop.bind(this);
+      super(props)
 
       this.verseOne = this.verseOne.bind(this)
       this.verseTwo = this.verseTwo.bind(this)
@@ -166,23 +165,23 @@ class TrackOne extends Component{
       <div>
       	<div className="lyrics-nav">
 	        <Link activeClass="active" to="verseOne" spy={true} smooth={true} duration={250} containerId="containerElement">
-	          Verse 1 / 
+	          Verse 1 /&nbsp;
 	        </Link>
 
 	        <Link activeClass="active" to="verseTwo" spy={true} smooth={true} duration={250} containerId="containerElement">
-	          Verse 2 /
+	          Verse 2 /&nbsp;
 	        </Link>
 
 	        <Link activeClass="active" to="chorus" spy={true} smooth={true} duration={250} containerId="containerElement">
-	          Chorus / 
+	          Chorus /&nbsp; 
 	        </Link>
 
 	        <Link activeClass="active" to="verseThree" spy={true} smooth={true} duration={250} containerId="containerElement">
-	          Verse 3 / 
+	          Verse 3 /&nbsp; 
 	        </Link>
 
 	        <Link activeClass="active" to="bridge" spy={true} smooth={true} duration={250} containerId="containerElement">
-	          Bridge / 
+	          Bridge /&nbsp; 
 	        </Link>
 
 	        <Link activeClass="active" to="outro" spy={true} smooth={true} duration={250} containerId="containerElement">
@@ -192,59 +191,45 @@ class TrackOne extends Component{
         
         <Element name="lyricsText" className="element" id="containerElement">
 
-          <Element name="verseOne" style={{
-            marginBottom: '230px'
-          }}>
+          <Element name="verseOne">
           	<pre className="lyrics">
-        		{this.verseOne()}
+          		{this.verseOne()}
           	</pre>
           </Element>
 
-          <Element name="verseTwo" style={{
-            marginBottom: '200px'
-          }}>
+          <Element name="verseTwo">
 	         	<pre className="lyrics">
 		      		{this.verseTwo()}
 	        	</pre>
           </Element>
 
-          <Element name="chorus" style={{
-            marginBottom: '200px'
-          }}>
-         	<pre className="lyrics">
-	      		{this.chorus()}
-        	</pre>
+          <Element name="chorus">
+           	<pre className="lyrics">
+  	      		{this.chorus()}
+          	</pre>
           </Element>
 
-          <Element name="verseThree" style={{
-            marginBottom: '300px'
-          }}>
-         	<pre className="lyrics">
-	      		{this.verseThree()}
-        	</pre>
+          <Element name="verseThree">
+           	<pre className="lyrics">
+  	      		{this.verseThree()}
+          	</pre>
           </Element>
 
-          <Element name="bridge" style={{
-            marginBottom: '200px'
-          }}>
-         	<pre className="lyrics">
-	      		{this.bridge()}
-        	</pre>
+          <Element name="bridge">
+           	<pre className="lyrics">
+  	      		{this.bridge()}
+          	</pre>
           </Element>
 
-          <Element name="outro" style={{
-            marginBottom: '200px'
-          }}>
-         	<pre className="lyrics">
-	      		{this.outro()}
-        	</pre>
+          <Element name="outro">
+           	<pre className="lyrics">
+  	      		{this.outro()}
+          	</pre>
           </Element>
-
         </Element>
       </div>
     );
   }
 };
-
 // <a onClick={this.scrollToTop}>To the top!</a>
 export default TrackOne;
