@@ -7,6 +7,12 @@ class TrackOne extends Component{
   constructor (props){
       super(props)
 
+      this.state = {
+        selected: false
+      }
+
+      this.onSetActive = this.onSetActive.bind(this)
+
       this.verseOne = this.verseOne.bind(this)
       this.verseTwo = this.verseTwo.bind(this)
       this.chorus = this.chorus.bind(this)
@@ -160,11 +166,16 @@ class TrackOne extends Component{
 	  )
 	}
 
+  onSetActive(){
+    console.log('this is active')
+    this.setState({selected: true})
+  }
+
   render () {
     return (
       <div>
       	<div className="lyrics-nav">
-	        <Link activeClass="active" to="verseOne" spy={true} smooth={true} duration={250} containerId="containerElement">
+	        <Link activeClass="active" to="verseOne" spy={true} smooth={true} duration={250} containerId="containerElement" onSetActive={this.onSetActive} className={this.state.selected ? 'selected-lyric':''}>
 	          Verse 1 /&nbsp;
 	        </Link>
 

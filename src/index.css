@@ -29,3 +29,7 @@ pre.lyrics {
   overflow: scroll;
   margin-bottom: 100px;
 }
+
+.selected-lyric {
+  color: red;
+}
