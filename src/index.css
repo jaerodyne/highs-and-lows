@@ -33,3 +33,11 @@ pre.lyrics {
 .selected-lyric {
   color: red;
 }
+
+.concept {
+  white-space: pre-line;
+  margin: 1em 0 0 1em;
+  text-align: center;
+  font-family: 'Permanent Marker';
+  margin-bottom: 8em;
+}

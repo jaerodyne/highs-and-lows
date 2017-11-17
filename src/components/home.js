@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Concept from './concept';
 import TrackOne from './trackOne';
 import TrackTwo from './trackTwo';
 import TempoChart from './tempoChart';
@@ -44,6 +45,7 @@ class Home extends Component {
 		return (
 			<div>
 				<button onClick={this.resetView}>Home</button>
+				<Concept />
 				{this.showTrack()}
 				{this.state.viewTrack ? null :
 					<TempoChart getTrack={this.getTrack}/>
