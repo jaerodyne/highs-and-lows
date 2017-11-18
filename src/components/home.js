@@ -57,13 +57,18 @@ class Home extends Component {
 				<button onClick={this.resetView}>Home</button>
 				<Parallax ref="parallax" pages={3}>
 
-				    <Parallax.Layer offset={0} speed={1} style={{ backgroundColor: '#243B4A' }} />
-				    <Parallax.Layer offset={1} speed={1} style={{ backgroundColor: '#805E73' }} />
+				    <Parallax.Layer offset={0} speed={1} style={{ backgroundColor: '#805E73' }} />
+				    <Parallax.Layer offset={1} speed={1} style={{ 
+				    		backgroundImage: "url('img/quote-pic.jpg')", 
+				    		backgroundSize: 'cover',
+				    		opacity: 0.6 
+				    	}}/>
+
 				    <Parallax.Layer offset={2} speed={1} style={{ backgroundColor: '#87BCDE' }} />
 
 				    <Parallax.Layer
 				        offset={0}
-				        speed={0.5}
+				        speed={0.3}
 				        style={styles}
 				        onClick={() => this.refs.parallax.scrollTo(1)}>
 				        <Concept />
@@ -79,7 +84,7 @@ class Home extends Component {
 
 				    <Parallax.Layer
 				        offset={2}
-				        speed={0.5}
+				        speed={-0.1}
 				        style={styles}
 				        onClick={() => this.refs.parallax.scrollTo(0)}>
 				        The end.
