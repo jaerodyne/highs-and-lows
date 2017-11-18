@@ -85,9 +85,8 @@ class Home extends Component {
 				    <Parallax.Layer
 				        offset={2}
 				        speed={-0.1}
-				        style={styles}
 				        onClick={() => this.refs.parallax.scrollTo(0)}>
-				        The end.
+							<TempoChart getTrack={this.getTrack}/>
 				    </Parallax.Layer>
 
 				</Parallax>
@@ -98,7 +97,6 @@ class Home extends Component {
 }
 // {this.showTrack()}
 // {this.state.viewTrack ? null :
-// 	<TempoChart getTrack={this.getTrack}/>
 // }
 
 export default Home;

@@ -151,7 +151,7 @@ class TempoChart extends Component {
         <Line
           data={this.state.data}
           width={400} 
-          height={200} 
+          height={300} 
           options={options}
           getElementAtEvent={this.trackSelected}
         />
