@@ -55,16 +55,22 @@ class Home extends Component {
 		return (
 			<div>
 				<button onClick={this.resetView}>Home</button>
-				<Parallax ref="parallax" pages={3}>
+				
+				
+				
+				{this.state.viewTrack ? this.showTrack() 
+					:
+					<Parallax ref="parallax" pages={3}>
 
-				    <Parallax.Layer offset={0} speed={1} style={{ backgroundColor: '#805E73' }} />
+				    <Parallax.Layer offset={0} speed={1} style={{ backgroundColor: '#87BCDE' }} />
 				    <Parallax.Layer offset={1} speed={1} style={{ 
 				    		backgroundImage: "url('img/quote-pic.jpg')", 
 				    		backgroundSize: 'cover',
 				    		opacity: 0.6 
 				    	}}/>
 
-				    <Parallax.Layer offset={2} speed={1} style={{ backgroundColor: '#87BCDE' }} />
+				    <Parallax.Layer offset={2} speed={1} />
+				    <Parallax.Layer offset={3} speed={1} />
 
 				    <Parallax.Layer
 				        offset={0}
@@ -89,14 +95,20 @@ class Home extends Component {
 							<TempoChart getTrack={this.getTrack}/>
 				    </Parallax.Layer>
 
+				    <Parallax.Layer
+				        offset={3}
+				        speed={1}
+				        style={styles}
+				        onClick={() => this.refs.parallax.scrollTo(2)}>
+				        <ConceptQuote />
+				    </Parallax.Layer>
+
 				</Parallax>
-				
+				}			
 			</div>
 		)
 	}
 }
-// {this.showTrack()}
-// {this.state.viewTrack ? null :
-// }
+
 
 export default Home;

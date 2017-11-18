@@ -4,7 +4,7 @@ import { Line, defaults } from 'react-chartjs-2';
 defaults.global.defaultFontFamily ='Permanent Marker';
 defaults.global.defaultFontStyle = 'bold';
 defaults.global.defaultFontSize = 20;
-defaults.global.defaultFontColor = 'rgba(255,99,132,1)';
+defaults.global.defaultFontColor = 'rgba(36,36,36,1)';
 
 var moods = ["Straight Up Rock", "Rock", "Laid-Back Chill", "Groove", "Phasered Out Rock", "Latin-like Dance Rock?", "Raw Rock", "Acoustic Rock Journey", "Needs More Drums", "Lonely Guitar Intro", "Reggae-Influenced Shuffle Rock", "Rock Punk Rock", "Finale"];
 
@@ -151,7 +151,6 @@ class TempoChart extends Component {
         <Line
           data={this.state.data}
           width={400} 
-          height={300} 
           options={options}
           getElementAtEvent={this.trackSelected}
         />
