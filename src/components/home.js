@@ -1,8 +1,13 @@
 import React, { Component } from 'react';
+import Parallax from 'react-springy-parallax';
+
 import Concept from './concept';
+import ConceptQuote from './conceptQuote';
+
+import TempoChart from './tempoChart';
+
 import TrackOne from './trackOne';
 import TrackTwo from './trackTwo';
-import TempoChart from './tempoChart';
 
 class Home extends Component {
 
@@ -42,17 +47,53 @@ class Home extends Component {
 	}
 
 	render() {
+		const styles = {
+		    display: 'flex', 
+		    alignItems: 'center', 
+		    justifyContent: 'center'
+		}
 		return (
 			<div>
 				<button onClick={this.resetView}>Home</button>
-				<Concept />
-				{this.showTrack()}
-				{this.state.viewTrack ? null :
-					<TempoChart getTrack={this.getTrack}/>
-				}
+				<Parallax ref="parallax" pages={3}>
+
+				    <Parallax.Layer offset={0} speed={1} style={{ backgroundColor: '#243B4A' }} />
+				    <Parallax.Layer offset={1} speed={1} style={{ backgroundColor: '#805E73' }} />
+				    <Parallax.Layer offset={2} speed={1} style={{ backgroundColor: '#87BCDE' }} />
+
+				    <Parallax.Layer
+				        offset={0}
+				        speed={0.5}
+				        style={styles}
+				        onClick={() => this.refs.parallax.scrollTo(1)}>
+				        <Concept />
+				    </Parallax.Layer>
+
+				    <Parallax.Layer
+				        offset={1}
+				        speed={-0.1}
+				        style={styles}
+				        onClick={() => this.refs.parallax.scrollTo(2)}>
+				        <ConceptQuote />
+				    </Parallax.Layer>
+
+				    <Parallax.Layer
+				        offset={2}
+				        speed={0.5}
+				        style={styles}
+				        onClick={() => this.refs.parallax.scrollTo(0)}>
+				        The end.
+				    </Parallax.Layer>
+
+				</Parallax>
+				
 			</div>
 		)
 	}
 }
+// {this.showTrack()}
+// {this.state.viewTrack ? null :
+// 	<TempoChart getTrack={this.getTrack}/>
+// }
 
 export default Home;
