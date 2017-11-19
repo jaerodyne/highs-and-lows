@@ -8,6 +8,7 @@ import TempoChart from './tempoChart';
 
 import TrackOne from './trackOne';
 import TrackTwo from './trackTwo';
+import TrackThree from './trackThree';
 
 class Home extends Component {
 
@@ -36,6 +37,8 @@ class Home extends Component {
 					return <TrackOne />;
 				case 2:
 					return <TrackTwo />;
+				case 3:
+					return <TrackThree />;
 				default:
 					return null;
 			}
@@ -54,10 +57,7 @@ class Home extends Component {
 		}
 		return (
 			<div>
-				<button onClick={this.resetView}>Home</button>
-				
-				
-				
+
 				{this.state.viewTrack ? this.showTrack() 
 					:
 					<Parallax ref="parallax" pages={3}>
