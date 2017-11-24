@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import Parallax from 'react-springy-parallax';
 
+import VideoTeaser from './videoTeaser';
+
 import Concept from './concept';
 import ConceptQuote from './conceptQuote';
 
@@ -57,7 +59,7 @@ class Home extends Component {
 		}
 		return (
 			<div>
-
+				
 				{this.state.viewTrack ? this.showTrack() 
 					:
 					<Parallax ref="parallax" pages={3}>
@@ -71,30 +73,23 @@ class Home extends Component {
 
 				    <Parallax.Layer offset={2} speed={1} />
 				    <Parallax.Layer offset={3} speed={1} />
+						
+						<Parallax.Layer
+				        offset={1}
+				        speed={-0.1}
+				        style={styles}
+				        onClick={() => this.refs.parallax.scrollTo(2)}>
+				        <Concept />
+				    </Parallax.Layer>
 
 				    <Parallax.Layer
 				        offset={0}
 				        speed={0.3}
 				        style={styles}
 				        onClick={() => this.refs.parallax.scrollTo(1)}>
-				        <Concept />
+				        <VideoTeaser />
 				    </Parallax.Layer>
-
-				    <Parallax.Layer
-				        offset={1}
-				        speed={-0.1}
-				        style={styles}
-				        onClick={() => this.refs.parallax.scrollTo(2)}>
-				        <ConceptQuote />
-				    </Parallax.Layer>
-
-				    <Parallax.Layer
-				        offset={2}
-				        speed={-0.1}
-				        onClick={() => this.refs.parallax.scrollTo(0)}>
-							<TempoChart getTrack={this.getTrack}/>
-				    </Parallax.Layer>
-
+				    
 				    <Parallax.Layer
 				        offset={3}
 				        speed={1}
