@@ -62,7 +62,7 @@ class Home extends Component {
 				
 				{this.state.viewTrack ? this.showTrack() 
 					:
-					<Parallax ref="parallax" pages={3}>
+					<Parallax ref="parallax" pages={2}>
 
 				    <Parallax.Layer offset={0} speed={1} style={{ backgroundColor: '#87BCDE' }} />
 				    <Parallax.Layer offset={1} speed={1} style={{ 
@@ -97,9 +97,8 @@ class Home extends Component {
 				        onClick={() => this.refs.parallax.scrollTo(2)}>
 				        <ConceptQuote />
 				    </Parallax.Layer>
-
 				</Parallax>
-				}			
+				}
 			</div>
 		)
 	}
