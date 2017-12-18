@@ -78,7 +78,7 @@ pre.lyrics {
 
 .footer {
   opacity: 0.5;
-  font-size: 18px;
+  font-size: 16px;
   text-align: center;
 }
 
@@ -95,12 +95,10 @@ pre.lyrics {
   display: block;
   float: left;
   margin-bottom: 0.3em;
-  padding-right: 0.3em;
+  padding: 0.1em;
 }
 
 .copyright {
-  /*padding: 0;*/
   margin: 0 0em 1em 0;
   float: right;
-  /*margin: 0;*/
 }
