@@ -12,8 +12,8 @@ class VideoTeaser extends Component {
     render () {
         return (
             <div>
-                <h1>Jillian Somera and the Beta Option</h1>
-                <h2>The Making of Highs and Lows</h2>
+               {/* <h1>Jillian Somera and the Beta Option</h1>
+                <h2>The Making of Highs and Lows</h2>*/}
                 <video id="background-video" loop autoPlay>
                     <source src={this.state.videoURL} type="video/mp4" />
                     <source src={this.state.videoURL} type="video/ogg" />

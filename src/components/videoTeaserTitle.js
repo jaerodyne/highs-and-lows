@@ -15,18 +15,9 @@ const transitionStyles = {
 }
 
 const VideoTeaserTitle = () =>
-	<Transition in={true} timeout={duration}>
-		{(transitionState => {
-			return (
-				<span style={{
-					...defaultStyle,
-					...transitionStyles[transitionState]
-				}}>
-					Jillian Somera and the Beta Option
-					The Making of Highs and Lows
-				</span>
-			)
-		})}
-	</Transition>
+	<div className="background-video-title">
+		<h1>Jillian Somera and the Beta Option</h1>
+		<h2>The Making of Highs and Lows</h2>
+	</div>
 
 export default VideoTeaserTitle

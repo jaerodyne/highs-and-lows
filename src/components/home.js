@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import Parallax from 'react-springy-parallax';
 
 import VideoTeaser from './videoTeaser';
+import VideoTeaserTitle from './videoTeaserTitle';
 
 import Concept from './concept';
 import ConceptQuote from './conceptQuote';
@@ -62,41 +63,17 @@ class Home extends Component {
 				
 				{this.state.viewTrack ? this.showTrack() 
 					:
-					<Parallax ref="parallax" pages={2}>
-
-				    <Parallax.Layer offset={0} speed={1} style={{ backgroundColor: '#87BCDE' }} />
-				    <Parallax.Layer offset={1} speed={1} style={{ 
-				    		backgroundImage: "url('img/quote-pic.jpg')", 
-				    		backgroundSize: 'cover',
-				    		opacity: 0.6 
-				    	}}/>
-
-				    <Parallax.Layer offset={2} speed={1} />
-				    <Parallax.Layer offset={3} speed={1} />
-						
-						<Parallax.Layer
-				        offset={1}
-				        speed={-0.1}
-				        style={styles}
-				        onClick={() => this.refs.parallax.scrollTo(2)}>
-				        <Concept />
-				    </Parallax.Layer>
+					<Parallax ref="parallax" pages={1}>
 
 				    <Parallax.Layer
-				        offset={0}
-				        speed={0.3}
-				        style={styles}
-				        onClick={() => this.refs.parallax.scrollTo(1)}>
-				        <VideoTeaser />
+			        offset={0}
+			        speed={0}
+			        style={styles}
+			      >
+							<VideoTeaserTitle />
+				      <VideoTeaser />
 				    </Parallax.Layer>
-				    
-				    <Parallax.Layer
-				        offset={3}
-				        speed={1}
-				        style={styles}
-				        onClick={() => this.refs.parallax.scrollTo(2)}>
-				        <ConceptQuote />
-				    </Parallax.Layer>
+
 				</Parallax>
 				}
 			</div>
