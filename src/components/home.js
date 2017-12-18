@@ -13,6 +13,8 @@ import TrackOne from './trackOne';
 import TrackTwo from './trackTwo';
 import TrackThree from './trackThree';
 
+import Footer from './Footer';
+
 class Home extends Component {
 
 	constructor(props) {
@@ -72,10 +74,19 @@ class Home extends Component {
 			      >
 							<VideoTeaserTitle />
 				      <VideoTeaser />
-				    </Parallax.Layer>
 
+				    </Parallax.Layer>
+						
+						<Parallax.Layer
+							offset={0.45}
+							speed={0}
+							style={styles}
+						>
+							<Footer />
+						</Parallax.Layer>
 				</Parallax>
 				}
+
 			</div>
 		)
 	}

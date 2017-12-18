@@ -20,4 +20,4 @@ const VideoTeaserTitle = () =>
 		<h2>The Making of Highs and Lows</h2>
 	</div>
 
-export default VideoTeaserTitle
+export default VideoTeaserTitle;
