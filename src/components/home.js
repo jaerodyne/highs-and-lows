@@ -1,7 +1,19 @@
 import React, { Component } from 'react';
-import TrackOne from './trackOne';
-import TrackTwo from './trackTwo';
-import TempoChart from './tempoChart';
+import Parallax from 'react-springy-parallax';
+
+import VideoTeaser from './VideoTeaser';
+import VideoTeaserTitle from './VideoTeaserTitle';
+
+import Concept from './Concept';
+import ConceptQuote from './ConceptQuote';
+
+import TempoChart from './TempoChart';
+
+import TrackOne from './TrackOne';
+import TrackTwo from './TrackTwo';
+import TrackThree from './TrackThree';
+
+import Footer from './Footer';
 
 class Home extends Component {
 
@@ -30,6 +42,8 @@ class Home extends Component {
 					return <TrackOne />;
 				case 2:
 					return <TrackTwo />;
+				case 3:
+					return <TrackThree />;
 				default:
 					return null;
 			}
@@ -41,16 +55,42 @@ class Home extends Component {
 	}
 
 	render() {
+		const styles = {
+		    display: 'flex', 
+		    alignItems: 'center', 
+		    justifyContent: 'center'
+		}
 		return (
 			<div>
-				<button onClick={this.resetView}>Home</button>
-				{this.showTrack()}
-				{this.state.viewTrack ? null :
-					<TempoChart getTrack={this.getTrack}/>
+				
+				{this.state.viewTrack ? this.showTrack() 
+					:
+					<Parallax ref="parallax" pages={1}>
+
+				    <Parallax.Layer
+			        offset={0}
+			        speed={0}
+			        style={styles}
+			      >
+							<VideoTeaserTitle />
+				      <VideoTeaser />
+
+				    </Parallax.Layer>
+						
+						<Parallax.Layer
+							offset={0.44}
+							speed={0}
+							style={styles}
+						>
+							<Footer />
+						</Parallax.Layer>
+				</Parallax>
 				}
+
 			</div>
 		)
 	}
 }
+
 
 export default Home;

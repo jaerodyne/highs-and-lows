@@ -1,8 +1,14 @@
 body {
   margin: 0;
+  color: #CCCCC8;
+  font-family: 'Barlow', sans-serif;
   padding: 0;
-  font-family: 'Permanent Marker';
   font-size: 32px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Permanent Marker';
+  text-align: center;
 }
 
 .lyrics-nav {
@@ -15,7 +21,6 @@ pre.lyrics {
   white-space: pre-line;
   margin: 1em 0 0 1em;
   text-align: center;
-  font-family: 'Permanent Marker';
   margin-bottom: 8em;
 }
 
@@ -32,4 +37,70 @@ pre.lyrics {
 
 .selected-lyric {
   color: red;
+}
+
+.concept h1 {
+/*  margin-top: 3em;
+  margin-bottom: -0.4em;
+  z-index: 0;*/
+}
+
+.concept p {
+  line-height: 1.4em;
+  margin: 0 0 8em 1em;
+  text-align: left;
+  white-space: pre-line;
+}
+
+.concept-quote {
+  
+}
+
+#background-video {
+  -webkit-filter: contrast(140%); /* Safari 6.0 - 9.0 */
+  filter: contrast(140%);
+  position: fixed;
+  right: 0; 
+  bottom: 0;
+  min-width: 100%; 
+  min-height: 100%;
+  width: auto; 
+  height: auto;
+  z-index: -100;
+}
+
+.background-video-title {
+  color: white;
+  font-weight: 200;
+  opacity: 0.8;
+  text-shadow: 1px 1px #202020;
+}
+
+.footer {
+  opacity: 0.5;
+  font-size: 18px;
+  text-align: center;
+}
+
+.social-links {
+  list-style-type: none;
+  font-size: 28px;
+}
+
+.social-links a {
+  color: #CCCCC8;
+}
+
+.social-links li {
+  display: block;
+  float: left;
+  margin-bottom: 0.3em;
+  padding-right: 0.3em;
+}
+
+.copyright {
+  /*padding: 0;*/
+  margin: 0 0em 1em 0;
+  float: right;
+  /*margin: 0;*/
 }

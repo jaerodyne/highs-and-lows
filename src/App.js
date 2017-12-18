@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
-import './App.css';
 import './index.css';
-import Home from './components/home';
+import Home from './components/Home';
 
 class App extends Component {
   render() {
@@ -12,9 +11,5 @@ class App extends Component {
     );
   }
 }
-
-//<header className="App-header">
-  //<h1 className="App-title">Watch Out Boys</h1>
-//</header>
 
 export default App;
