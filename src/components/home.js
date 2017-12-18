@@ -78,7 +78,7 @@ class Home extends Component {
 				    </Parallax.Layer>
 						
 						<Parallax.Layer
-							offset={0.45}
+							offset={0.44}
 							speed={0}
 							style={styles}
 						>
