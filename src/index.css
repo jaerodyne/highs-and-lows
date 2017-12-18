@@ -87,6 +87,10 @@ pre.lyrics {
   font-size: 28px;
 }
 
+.social-links a {
+  color: #CCCCC8;
+}
+
 .social-links li {
   display: block;
   float: left;
