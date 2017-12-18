@@ -1,17 +1,17 @@
 import React, { Component } from 'react';
 import Parallax from 'react-springy-parallax';
 
-import VideoTeaser from './videoTeaser';
-import VideoTeaserTitle from './videoTeaserTitle';
+import VideoTeaser from './VideoTeaser';
+import VideoTeaserTitle from './VideoTeaserTitle';
 
-import Concept from './concept';
-import ConceptQuote from './conceptQuote';
+import Concept from './Concept';
+import ConceptQuote from './ConceptQuote';
 
-import TempoChart from './tempoChart';
+import TempoChart from './TempoChart';
 
-import TrackOne from './trackOne';
-import TrackTwo from './trackTwo';
-import TrackThree from './trackThree';
+import TrackOne from './TrackOne';
+import TrackTwo from './TrackTwo';
+import TrackThree from './TrackThree';
 
 import Footer from './Footer';
 
