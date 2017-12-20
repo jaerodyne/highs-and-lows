@@ -79,12 +79,15 @@ pre.lyrics {
 .footer {
   opacity: 0.5;
   font-size: 16px;
-  text-align: center;
+  /*text-align: center;*/
 }
 
 .social-links {
-  list-style-type: none;
   font-size: 28px;
+  list-style-type: none;
+  /*margin: 0;*/
+  padding: 0.4em;
+  /*margin-right: 0.3em;*/
 }
 
 .social-links a {
@@ -94,11 +97,9 @@ pre.lyrics {
 .social-links li {
   display: block;
   float: left;
-  margin-bottom: 0.3em;
-  padding: 0.1em;
+  margin: 0.1em;
 }
 
 .copyright {
-  margin: 0 0em 1em 0;
-  float: right;
+  margin: 0;
 }

@@ -4,6 +4,8 @@ import Parallax from 'react-springy-parallax';
 import VideoTeaser from './VideoTeaser';
 import VideoTeaserTitle from './VideoTeaserTitle';
 
+import MailingList from './MailingList';
+
 import Concept from './Concept';
 import ConceptQuote from './ConceptQuote';
 
@@ -74,7 +76,14 @@ class Home extends Component {
 			      >
 							<VideoTeaserTitle />
 				      <VideoTeaser />
+				    </Parallax.Layer>
 
+				    <Parallax.Layer
+			        offset={0.2}
+			        speed={0}
+			        style={styles}
+			      >
+							<MailingList />
 				    </Parallax.Layer>
 						
 						<Parallax.Layer
