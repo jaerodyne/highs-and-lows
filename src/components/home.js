@@ -5,6 +5,7 @@ import VideoTeaser from './VideoTeaser';
 import VideoTeaserTitle from './VideoTeaserTitle';
 
 import MailingList from './MailingList';
+import Subscribe from './Subscribe';
 
 import Concept from './Concept';
 import ConceptQuote from './ConceptQuote';
@@ -64,6 +65,7 @@ class Home extends Component {
 		}
 		return (
 			<div>
+			<Subscribe />
 				
 				{this.state.viewTrack ? this.showTrack() 
 					:
@@ -76,6 +78,7 @@ class Home extends Component {
 			      >
 							<VideoTeaserTitle />
 				      <VideoTeaser />
+							
 				    </Parallax.Layer>
 
 				    <Parallax.Layer
@@ -83,7 +86,6 @@ class Home extends Component {
 			        speed={0}
 			        style={styles}
 			      >
-							<MailingList />
 				    </Parallax.Layer>
 						
 						<Parallax.Layer
