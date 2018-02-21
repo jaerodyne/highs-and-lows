@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { Link, Element, Events, scroll, scrollSpy, scroller } from 'react-scroll';
 import '../index.css';
 
-class TrackFour extends Component{
+class Track1 extends Component{
 
   constructor (props){
       super(props)
@@ -99,11 +99,11 @@ class TrackFour extends Component{
 	verseOne() {
 		return (
 		  `
-		  	Excuse me while I collect myself
-        'Cause lately I've been falling apart
-        Don't know what I'm doing
-        Don't know where I should go
-        I'm lost caught in the undertow
+		  	In this place
+				I found something
+				I couldn’t bear to keep
+				A secret buried deep
+				In a man’s broken heart
 		  `
 	  )
 	}
@@ -111,12 +111,10 @@ class TrackFour extends Component{
 	verseTwo() {
 		return (
 		  `
-				Bright lights blinding me
-        On and off they go
-        Sudden darkness envelopes my soul
-        Keep on smiling
-        'Cause I'm putting on a show
-        The charade ends as the curtains close
+				Doomed from the start
+				A longing never to be realized
+				A woman he idealized
+				And unmet expectations
 		  `
 	  )
 	}
@@ -124,14 +122,10 @@ class TrackFour extends Component{
 	chorus() {
 		return (
 		  `
-				The days pass by
-        I'm floating through life
-        Just a passerby
-        Will I sink or swim
-        Drifting into sleep
-        Wondering what's the next day like
-        Hear a lullaby
-        But there's nobody singing to me now
+				Watch out boys
+				Cause you’ll never have her
+				Watch out boys
+				Cause you’ll never catch her
 		  `
 	  )
 	}
@@ -139,12 +133,11 @@ class TrackFour extends Component{
 	verseThree() {
 		return (
 		  `
-				I'm waiting for my second wind
-        Some inspired revelation
-        Anything to get out of this twisted situation
-        Come up standing tall
-        Getting back into that grind
-        Fighting back the enemy that is my troubled mind
+				And she’ll act like she didn’t notice
+				Like you didn’t want this to turn out a different way
+				Cause what you could you really say?
+				Oh but you’ll keep trying
+				Oh you swear she won’t get away
 		  `
 	  )
 	}
@@ -152,7 +145,12 @@ class TrackFour extends Component{
 	bridge() {
 		return (
 		  `
-				Oh oh oh oh oh oh oh (and then a couple more times)
+				And after all that you’ve done
+				Well you still won’t be the one
+				She wants forever
+				Never means never
+				And that’s just the way it is
+				That’s just the way it is
 		  `
 	  )
 	}
@@ -160,10 +158,10 @@ class TrackFour extends Component{
 	outro() {
 		return (
 		  `
-        But there's nobody singing to me now
-        But there's nobody singing to me now
-        But there's nobody singing to me now
-				But there's nobody singing to me now
+				But what’s it to you?
+				(It’s not my place to say)
+				What’s it to you?
+				(It’s not my place to say)
 		  `
 	  )
 	}
@@ -245,4 +243,4 @@ class TrackFour extends Component{
   }
 };
 // <a onClick={this.scrollToTop}>To the top!</a>
-export default TrackFour;
+export default Track1;
