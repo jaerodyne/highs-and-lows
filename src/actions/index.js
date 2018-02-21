@@ -10,7 +10,9 @@ export function subscribeUser(email) {
 	   'Content-Type': 'application/json'
 		},
 		body: JSON.stringify({
-			email: email
+			subscriber: {
+				email: email
+			}
 		}),
 	})
 	.then(function(response) {

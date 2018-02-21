@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import subscribeUser from '../actions/index';
+// import subscribeUser from '../actions/index';
 
 class Subscribe extends Component {
 
@@ -15,11 +15,13 @@ class Subscribe extends Component {
 	}
 
 	onChange(e) {
+    console.log(e.target.value)
 		this.setState({email: e.target.value})
 	}
 
 	onSubmit(e) {
     // this.props.subscribeUser(this.state.email)
+    console.log(e.target.value)
     const URL = `http://localhost:3000`
   	
   	fetch(`${URL}/subscribers`, {
@@ -29,7 +31,9 @@ class Subscribe extends Component {
   	   'Content-Type': 'application/json'
   		},
   		body: JSON.stringify({
-  			email: this.state.email
+        "subscriber": {
+    			"email": this.state.email
+        }
   		}),
   	})
   	.then(function(response) {
@@ -45,12 +49,12 @@ class Subscribe extends Component {
 	render() {
 		return (
 			<div>
-			<form onSubmit={this.props.onSubmit}>
+			<form className="subscribe" onSubmit={this.onSubmit}>
         <label>
           Name:
-          <input type="text" value={this.state.email} onChange={this.onChange} />
+          <input type="text" value={this.state.email} onChange={this.onChange} name="subscriber[email]" />
         </label>
-        <input type="button" value="Submit" />
+        <input type="submit" value="Submit" />
       </form>
 			</div>
 		);

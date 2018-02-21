@@ -3,13 +3,9 @@ import Parallax from 'react-springy-parallax';
 
 import VideoTeaser from './VideoTeaser';
 import VideoTeaserTitle from './VideoTeaserTitle';
-
-import MailingList from './MailingList';
 import Subscribe from './Subscribe';
-
 import Concept from './Concept';
 import ConceptQuote from './ConceptQuote';
-
 import TempoChart from './TempoChart';
 
 import TrackOne from './TrackOne';
@@ -65,43 +61,19 @@ class Home extends Component {
 		}
 		return (
 			<div>
-			<Subscribe />
-				
 				{this.state.viewTrack ? this.showTrack() 
 					:
-					<Parallax ref="parallax" pages={1}>
-
-				    <Parallax.Layer
-			        offset={0}
-			        speed={0}
-			        style={styles}
-			      >
-							<VideoTeaserTitle />
-				      <VideoTeaser />
-							
-				    </Parallax.Layer>
-
-				    <Parallax.Layer
-			        offset={0.2}
-			        speed={0}
-			        style={styles}
-			      >
-				    </Parallax.Layer>
-						
-						<Parallax.Layer
-							offset={0.44}
-							speed={0}
-							style={styles}
-						>
-							<Footer />
-						</Parallax.Layer>
-				</Parallax>
+					<div styles={styles}>
+						<VideoTeaserTitle />
+						<Subscribe />
+						<VideoTeaser />
+						<Footer />
+					</div>
 				}
 
 			</div>
 		)
 	}
 }
-
 
 export default Home;
