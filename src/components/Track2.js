@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { Link, Element, Events, scroll, scrollSpy, scroller } from 'react-scroll';
 import '../index.css';
 
-class TrackTwo extends Component{
+class Track2 extends Component{
 
   constructor (props){
       super(props);
@@ -317,4 +317,4 @@ class TrackTwo extends Component{
 };
 
 // <a onClick={this.scrollToTop}>To the top!</a>
-export default TrackTwo;
+export default Track2;

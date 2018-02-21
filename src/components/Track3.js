@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { Link, Element, Events, scroll, scrollSpy, scroller } from 'react-scroll';
 import '../index.css';
 
-class TrackOne extends Component{
+class Track3 extends Component{
 
   constructor (props){
       super(props)
@@ -17,7 +17,7 @@ class TrackOne extends Component{
       this.verseTwo = this.verseTwo.bind(this)
       this.chorus = this.chorus.bind(this)
       this.verseThree = this.verseThree.bind(this)
-      this.outro = this.outro.bind(this)
+      this.bridge = this.bridge.bind(this)
   }
 
   componentDidMount() {
@@ -99,11 +99,13 @@ class TrackOne extends Component{
 	verseOne() {
 		return (
 		  `
-		  	In this place
-				I found something
-				I couldn’t bear to keep
-				A secret buried deep
-				In a man’s broken heart
+		  	Hey there superstar
+		  	Where you going?
+		  	The lights are still on and the spotlight's on you
+		  	You've got an hour to kill
+		  	To impress and to thrill
+		  	This is your moment
+		  	This is what you've wanted your whole life long
 		  `
 	  )
 	}
@@ -111,10 +113,11 @@ class TrackOne extends Component{
 	verseTwo() {
 		return (
 		  `
-				Doomed from the start
-				A longing never to be realized
-				A woman he idealized
-				And unmet expectations
+				But when you think about it
+				Struggle's more than it's worth
+				Pushes you to the end
+				But far is far enough
+				When you're nearly falling over the edge
 		  `
 	  )
 	}
@@ -122,10 +125,10 @@ class TrackOne extends Component{
 	chorus() {
 		return (
 		  `
-				Watch out boys
-				Cause you’ll never have her
-				Watch out boys
-				Cause you’ll never catch her
+				But who are you now
+				On the big stage
+				When the people you left behind
+				Don't know you anymore
 		  `
 	  )
 	}
@@ -133,11 +136,25 @@ class TrackOne extends Component{
 	verseThree() {
 		return (
 		  `
-				And she’ll act like she didn’t notice
-				Like you didn’t want this to turn out a different way
-				Cause what you could you really say?
-				Oh but you’ll keep trying
-				Oh you swear she won’t get away
+				But it's never bothered you before
+				Because you know
+				You have to do what you have to do
+				To get to where you are
+				Isn't that right superstar?
+				Whoa no
+		  `
+	  )
+	}
+
+	verseFour(){
+		return (
+		  `
+				But it's never bothered you before
+				Because you know
+				You have to do what you have to do
+				To get to where you are
+				Isn't that right superstar?
+				Whoa no
 		  `
 	  )
 	}
@@ -145,23 +162,15 @@ class TrackOne extends Component{
 	bridge() {
 		return (
 		  `
-				And after all that you’ve done
-				Well you still won’t be the one
-				She wants forever
-				Never means never
-				And that’s just the way it is
-				That’s just the way it is
-		  `
-	  )
-	}
-
-	outro() {
-		return (
-		  `
-				But what’s it to you?
-				(It’s not my place to say)
-				What’s it to you?
-				(It’s not my place to say)
+				Better better
+				Better that they take the fall for you
+				Better better
+				One more drink and the night is through
+				Better better
+				You'll find a way to make it day by bay
+				Better better
+				It's what you'll never feel
+				Whoa oh
 		  `
 	  )
 	}
@@ -191,12 +200,12 @@ class TrackOne extends Component{
 	          Verse 3 /&nbsp; 
 	        </Link>
 
-	        <Link activeClass="active" to="bridge" spy={true} smooth={true} duration={250} containerId="containerElement">
-	          Bridge /&nbsp; 
+	        <Link activeClass="active" to="verseFour" spy={true} smooth={true} duration={250} containerId="containerElement">
+	          Verse 4 /&nbsp; 
 	        </Link>
 
-	        <Link activeClass="active" to="outro" spy={true} smooth={true} duration={250} containerId="containerElement">
-	          Outro
+	        <Link activeClass="active" to="bridge" spy={true} smooth={true} duration={250} containerId="containerElement">
+	          Bridge
 	        </Link>
 	      </div>
         
@@ -226,15 +235,15 @@ class TrackOne extends Component{
           	</pre>
           </Element>
 
-          <Element name="bridge">
+          <Element name="verseFour">
            	<pre className="lyrics">
-  	      		{this.bridge()}
+  	      		{this.verseFour()}
           	</pre>
           </Element>
 
-          <Element name="outro">
+          <Element name="bridge">
            	<pre className="lyrics">
-  	      		{this.outro()}
+  	      		{this.bridge()}
           	</pre>
           </Element>
         </Element>
@@ -242,5 +251,5 @@ class TrackOne extends Component{
     );
   }
 };
-// <a onClick={this.scrollToTop}>To the top!</a>
-export default TrackOne;
+
+export default Track3;
