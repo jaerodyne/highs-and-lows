@@ -11,6 +11,16 @@ import TempoChart from './TempoChart';
 import TrackOne from './TrackOne';
 import TrackTwo from './TrackTwo';
 import TrackThree from './TrackThree';
+import TrackFour from './TrackFour';
+import TrackFive from './TrackFive';
+import TrackSix from './TrackSix';
+import TrackSeven from './TrackSeven';
+import TrackEight from './TrackEight';
+import TrackNine from './TrackNine';
+import TrackTen from './TrackTen';
+import TrackEleven from './TrackEleven';
+import TrackTwelve from './TrackTwelve';
+import TrackThirteen from './TrackThirteen';
 
 import Footer from './Footer';
 
@@ -43,6 +53,26 @@ class Home extends Component {
 					return <TrackTwo />;
 				case 3:
 					return <TrackThree />;
+				case 4:
+					return <TrackFour />;
+				case 5:
+					return <TrackFive />;
+				case 6:
+					return <TrackSix />;
+				case 7:
+					return <TrackSeven />;
+				case 8:
+					return <TrackEight />;
+				case 9:
+					return <TrackNine />;
+				case 10:
+					return <TrackTen />;
+				case 11:
+					return <TrackEleven />;
+				case 12:
+					return <TrackTwelve />;
+				case 13:
+					return <TrackThirteen />;
 				default:
 					return null;
 			}
