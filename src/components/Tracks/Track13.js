@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import { Link, Element, Events, scroll, scrollSpy, scroller } from 'react-scroll';
-import '../index.css';
+import '../../index.css';
 
-class Track4 extends Component{
+class Track13 extends Component{
 
   constructor (props){
       super(props)
@@ -99,71 +99,87 @@ class Track4 extends Component{
 	verseOne() {
 		return (
 		  `
-		  	Excuse me while I collect myself
-        'Cause lately I've been falling apart
-        Don't know what I'm doing
-        Don't know where I should go
-        I'm lost caught in the undertow
+		  	One more drink
+        That's all it took
+        He grabbed the wheel
+        As his hands shook
+        The coldness of the devil
+        Breathing him in
+        Consuming all the fight that's within
 		  `
 	  )
 	}
 
-	verseTwo() {
-		return (
-		  `
-				Bright lights blinding me
-        On and off they go
-        Sudden darkness envelopes my soul
-        Keep on smiling
-        'Cause I'm putting on a show
-        The charade ends as the curtains close
-		  `
-	  )
-	}
+
+  verseTwo() {
+    return (
+      `
+       Losing focus
+       Blackened skies
+       Early morning
+       To sunrise
+       It all happened so fast 
+       and then time stood still
+       As the rushing of blood to the head knocked him dead
+       And it's lights out
+       Lights out
+       Lights out
+      `
+    )
+  }
 
 	chorus() {
 		return (
 		  `
-				The days pass by
-        I'm floating through life
-        Just a passerby
-        Will I sink or swim
-        Drifting into sleep
-        Wondering what's the next day like
-        Hear a lullaby
-        But there's nobody singing to me now
+				Never forget
+        That it matters
+        Never forget
+        What you what you did
+        Never forget
+        I'll never let you live it down
 		  `
 	  )
 	}
 
-	verseThree() {
-		return (
-		  `
-				I'm waiting for my second wind
-        Some inspired revelation
-        Anything to get out of this twisted situation
-        Come up standing tall
-        Getting back into that grind
-        Fighting back the enemy that is my troubled mind
-		  `
-	  )
-	}
+  verseThree() {
+    return (
+      `
+        And it feels like forever
+        Recovering from a big mistake
+        Faced with your mortality
+        Forgetting its fragility
+        But we all lose touch sometimes
+        (We all lose touch sometimes)
+        It could be our own demise
+        (It could be our own demise)
+      `
+    )
+  }
 
-	bridge() {
-		return (
-		  `
-				Oh oh oh oh oh oh oh (and then a couple more times)
-		  `
-	  )
-	}
 
-	outro() {
+  verseFour() {
+    return (
+      `
+       We're not invincible that's for sure
+       And that's just the way it goes
+       It goes
+       It goes
+      `
+    )
+  }
+
+  bridge() {
 		return (
 		  `
-        But there's nobody singing to me now
-        But there's nobody singing to me now
-        But there's nobody singing to me now
-				But there's nobody singing to me now
+				Every moment has a consequence
+        Stealing away all the innocence
+        Of a life so pure
+        Of a life so pure
+        Now it's tainted by a memory
+        Of you just washing over me
+        Do you even know?
+        How could you ever really know?
+        Could you ever really know?
 		  `
 	  )
 	}
@@ -245,4 +261,4 @@ class Track4 extends Component{
   }
 };
 // <a onClick={this.scrollToTop}>To the top!</a>
-export default Track4;
+export default Track13;

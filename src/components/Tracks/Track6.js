@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import { Link, Element, Events, scroll, scrollSpy, scroller } from 'react-scroll';
-import '../index.css';
+import '../../index.css';
 
-class Track1 extends Component{
+class Track6 extends Component{
 
   constructor (props){
       super(props)
@@ -99,22 +99,13 @@ class Track1 extends Component{
 	verseOne() {
 		return (
 		  `
-		  	In this place
-				I found something
-				I couldn’t bear to keep
-				A secret buried deep
-				In a man’s broken heart
-		  `
-	  )
-	}
-
-	verseTwo() {
-		return (
-		  `
-				Doomed from the start
-				A longing never to be realized
-				A woman he idealized
-				And unmet expectations
+		  	Let's think for a second if you care
+        Expect to see you standing there
+        Trying to find reasons why
+        I stuck around just to dry out hanging on a string
+        That you laid out for wounds to sting
+        Open hearts are yours to break
+        There's no give just a lot of take
 		  `
 	  )
 	}
@@ -122,35 +113,39 @@ class Track1 extends Component{
 	chorus() {
 		return (
 		  `
-				Watch out boys
-				Cause you’ll never have her
-				Watch out boys
-				Cause you’ll never catch her
+				'Cause I stand no chance when it comes to you
+        'Cause you'd rather keep our secrets in the dark corners of your mind
+        And you prefer your busy life
+        And pushing me aside
+        'Cause I'm nothing to you
+        But I gave you everything I had
 		  `
 	  )
 	}
 
-	verseThree() {
-		return (
-		  `
-				And she’ll act like she didn’t notice
-				Like you didn’t want this to turn out a different way
-				Cause what you could you really say?
-				Oh but you’ll keep trying
-				Oh you swear she won’t get away
-		  `
-	  )
-	}
+  verseTwo() {
+    return (
+      `
+        I'm only writing words
+        Having this conversation with myself
+        Feeling the dusty item you left on the shelf
+        Of your life
+        And it won't be long before you throw me up
+        You've used me up and drained me dry
+        There's no explanation why
+      `
+    )
+  }
 
 	bridge() {
 		return (
 		  `
-				And after all that you’ve done
-				Well you still won’t be the one
-				She wants forever
-				Never means never
-				And that’s just the way it is
-				That’s just the way it is
+				How does it feel?
+        To know that you're always gonna be alone? 2x
+
+        How does it feel?
+        Well how do you feel?
+        I guess I'll never really know
 		  `
 	  )
 	}
@@ -158,10 +153,8 @@ class Track1 extends Component{
 	outro() {
 		return (
 		  `
-				But what’s it to you?
-				(It’s not my place to say)
-				What’s it to you?
-				(It’s not my place to say)
+        Oooh
+        'Cause I stand no chance against you
 		  `
 	  )
 	}
@@ -243,4 +236,4 @@ class Track1 extends Component{
   }
 };
 // <a onClick={this.scrollToTop}>To the top!</a>
-export default Track1;
+export default Track6;

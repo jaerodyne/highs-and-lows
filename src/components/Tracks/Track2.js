@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Link, Element, Events, scroll, scrollSpy, scroller } from 'react-scroll';
-import '../index.css';
+import '../../index.css';
 
 class Track2 extends Component{
 

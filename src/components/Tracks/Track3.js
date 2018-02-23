@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import { Link, Element, Events, scroll, scrollSpy, scroller } from 'react-scroll';
-import '../index.css';
+import '../../index.css';
 
-class Track5 extends Component{
+class Track3 extends Component{
 
   constructor (props){
       super(props)
@@ -17,7 +17,7 @@ class Track5 extends Component{
       this.verseTwo = this.verseTwo.bind(this)
       this.chorus = this.chorus.bind(this)
       this.verseThree = this.verseThree.bind(this)
-      this.outro = this.outro.bind(this)
+      this.bridge = this.bridge.bind(this)
   }
 
   componentDidMount() {
@@ -99,11 +99,25 @@ class Track5 extends Component{
 	verseOne() {
 		return (
 		  `
-		  	I've got a secret to tell but I won't tell anyone
-        'Cause why would I want to show you how deep my scars run
-        There's a darkness inside that I never could believe
-        Don't you know
-        You'll never really know me 'cause you'll
+		  	Hey there superstar
+		  	Where you going?
+		  	The lights are still on and the spotlight's on you
+		  	You've got an hour to kill
+		  	To impress and to thrill
+		  	This is your moment
+		  	This is what you've wanted your whole life long
+		  `
+	  )
+	}
+
+	verseTwo() {
+		return (
+		  `
+				But when you think about it
+				Struggle's more than it's worth
+				Pushes you to the end
+				But far is far enough
+				When you're nearly falling over the edge
 		  `
 	  )
 	}
@@ -111,45 +125,52 @@ class Track5 extends Component{
 	chorus() {
 		return (
 		  `
-				Run away
-        'Cause you'll
-        Run away
+				But who are you now
+				On the big stage
+				When the people you left behind
+				Don't know you anymore
 		  `
 	  )
 	}
 
-  verseTwo() {
-    return (
-      `
-        And I'll keep the thoughts to myself
-        Buried underneath
-        Fighting to surface
-        Drowning in the deep
-        If only I could show you
-        If only I could tell you
-        It wouldn't make a difference at all
-        'Cause I'll
-      `
-    )
-  }
+	verseThree() {
+		return (
+		  `
+				But it's never bothered you before
+				Because you know
+				You have to do what you have to do
+				To get to where you are
+				Isn't that right superstar?
+				Whoa no
+		  `
+	  )
+	}
+
+	verseFour(){
+		return (
+		  `
+				But it's never bothered you before
+				Because you know
+				You have to do what you have to do
+				To get to where you are
+				Isn't that right superstar?
+				Whoa no
+		  `
+	  )
+	}
 
 	bridge() {
 		return (
 		  `
-				And if I find that you stay
-        Well I'll be so inclined to leave
-        It's in my nature
-        'Cause it's one or the other
-        And I just don't
-        Trust myself with loving you
-		  `
-	  )
-	}
-
-	outro() {
-		return (
-		  `
-        No No No No
+				Better better
+				Better that they take the fall for you
+				Better better
+				One more drink and the night is through
+				Better better
+				You'll find a way to make it day by bay
+				Better better
+				It's what you'll never feel
+				Whoa oh
 		  `
 	  )
 	}
@@ -179,12 +200,12 @@ class Track5 extends Component{
 	          Verse 3 /&nbsp; 
 	        </Link>
 
-	        <Link activeClass="active" to="bridge" spy={true} smooth={true} duration={250} containerId="containerElement">
-	          Bridge /&nbsp; 
+	        <Link activeClass="active" to="verseFour" spy={true} smooth={true} duration={250} containerId="containerElement">
+	          Verse 4 /&nbsp; 
 	        </Link>
 
-	        <Link activeClass="active" to="outro" spy={true} smooth={true} duration={250} containerId="containerElement">
-	          Outro
+	        <Link activeClass="active" to="bridge" spy={true} smooth={true} duration={250} containerId="containerElement">
+	          Bridge
 	        </Link>
 	      </div>
         
@@ -214,15 +235,15 @@ class Track5 extends Component{
           	</pre>
           </Element>
 
-          <Element name="bridge">
+          <Element name="verseFour">
            	<pre className="lyrics">
-  	      		{this.bridge()}
+  	      		{this.verseFour()}
           	</pre>
           </Element>
 
-          <Element name="outro">
+          <Element name="bridge">
            	<pre className="lyrics">
-  	      		{this.outro()}
+  	      		{this.bridge()}
           	</pre>
           </Element>
         </Element>
@@ -230,5 +251,5 @@ class Track5 extends Component{
     );
   }
 };
-// <a onClick={this.scrollToTop}>To the top!</a>
-export default Track5;
+
+export default Track3;

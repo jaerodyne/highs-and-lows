@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import { Link, Element, Events, scroll, scrollSpy, scroller } from 'react-scroll';
-import '../index.css';
+import '../../index.css';
 
-class Track6 extends Component{
+class Track7 extends Component{
 
   constructor (props){
       super(props)
@@ -99,13 +99,12 @@ class Track6 extends Component{
 	verseOne() {
 		return (
 		  `
-		  	Let's think for a second if you care
-        Expect to see you standing there
-        Trying to find reasons why
-        I stuck around just to dry out hanging on a string
-        That you laid out for wounds to sting
-        Open hearts are yours to break
-        There's no give just a lot of take
+		  	Knew that there was something wrong
+        Couldn't keep it from me for too long
+        You're not strong enough to
+        Continue lying to me
+        Everybody knows that everything is different now
+        And I just gotta let you walk away
 		  `
 	  )
 	}
@@ -113,12 +112,14 @@ class Track6 extends Component{
 	chorus() {
 		return (
 		  `
-				'Cause I stand no chance when it comes to you
-        'Cause you'd rather keep our secrets in the dark corners of your mind
-        And you prefer your busy life
-        And pushing me aside
-        'Cause I'm nothing to you
-        But I gave you everything I had
+				'Cause everything is not alright 
+        But I gotta believe it can be
+        So go on
+        Just get out of my life
+        'Cause I'm not gonna follow you
+        To your way down
+        Stop bringing me down
+        I've gotta separate myself somehow
 		  `
 	  )
 	}
@@ -126,13 +127,12 @@ class Track6 extends Component{
   verseTwo() {
     return (
       `
-        I'm only writing words
-        Having this conversation with myself
-        Feeling the dusty item you left on the shelf
-        Of your life
-        And it won't be long before you throw me up
-        You've used me up and drained me dry
-        There's no explanation why
+        Didn't have a second thought
+        Just focused on the things you sought
+        Your heartless just doesn't make any sense to me
+        'Cause I remember who you used to be
+        Of how you would never do that
+        Of how the thought would never cross your mind
       `
     )
   }
@@ -140,12 +140,14 @@ class Track6 extends Component{
 	bridge() {
 		return (
 		  `
-				How does it feel?
-        To know that you're always gonna be alone? 2x
-
-        How does it feel?
-        Well how do you feel?
-        I guess I'll never really know
+				But it's over
+        How could I ever call you a friend?
+        It's over
+        Don't think I ever want to see you again
+        I wanted to tell you that I
+        Can't even look at you
+        Without fighting urges to cry
+        You just seem so far away
 		  `
 	  )
 	}
@@ -153,8 +155,8 @@ class Track6 extends Component{
 	outro() {
 		return (
 		  `
-        Oooh
-        'Cause I stand no chance against you
+        Leave me alone
+        I'm through
 		  `
 	  )
 	}
@@ -236,4 +238,4 @@ class Track6 extends Component{
   }
 };
 // <a onClick={this.scrollToTop}>To the top!</a>
-export default Track6;
+export default Track7;

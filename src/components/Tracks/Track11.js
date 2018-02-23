@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import { Link, Element, Events, scroll, scrollSpy, scroller } from 'react-scroll';
-import '../index.css';
+import '../../index.css';
 
-class Track6 extends Component{
+class Track11 extends Component{
 
   constructor (props){
       super(props)
@@ -99,12 +99,11 @@ class Track6 extends Component{
 	verseOne() {
 		return (
 		  `
-		  	Knew that there was something wrong
-        Couldn't keep it from me for too long
-        You're not strong enough to
-        Continue lying to me
-        Everybody knows that everything is different now
-        And I just gotta let you walk away
+		  	Knew a boy and they sent him out to sea
+        Told him it would teach him how to be a man
+        So they dressed him up in colors
+        And taught him how to fight
+        Now he's off defending somebody else's rights
 		  `
 	  )
 	}
@@ -112,14 +111,8 @@ class Track6 extends Component{
 	chorus() {
 		return (
 		  `
-				'Cause everything is not alright 
-        But I gotta believe it can be
-        So go on
-        Just get out of my life
-        'Cause I'm not gonna follow you
-        To your way down
-        Stop bringing me down
-        I've gotta separate myself somehow
+				But what about his own? 4x
+        Well what about it?
 		  `
 	  )
 	}
@@ -127,12 +120,50 @@ class Track6 extends Component{
   verseTwo() {
     return (
       `
-        Didn't have a second thought
-        Just focused on the things you sought
-        Your heartless just doesn't make any sense to me
-        'Cause I remember who you used to be
-        Of how you would never do that
-        Of how the thought would never cross your mind
+        He's made his decision there's no turning back
+        There's nothing that anyone can say
+        So father, mother, brother, sister please understand
+        He's waging war against lost souls and burying them in the sand
+      `
+    )
+  }
+
+  chorusTwo() {
+    return (
+      `
+        But what about the cost? 4x
+        Well he doesn't think about it
+      `
+    )
+  }
+
+  verseTwo() {
+    return (
+      `
+        Couldn't speak or breathe or even comprehend the total struggle
+        Fighting with himself and everybody else
+        But he's never been so sure that the poison has a cure
+        So he holds on swears he'll make it to the end
+      `
+    )
+  }
+  
+  chorusTwo() {
+    return (
+      `
+        But 
+        What's it all for? 4x
+        What is it
+      `
+    )
+  }
+
+  transitionToBridge() {
+    return (
+      `
+        What about all those promises you made
+        The love you gave
+        And everybody else you're leaving behind
       `
     )
   }
@@ -140,14 +171,14 @@ class Track6 extends Component{
 	bridge() {
 		return (
 		  `
-				But it's over
-        How could I ever call you a friend?
-        It's over
-        Don't think I ever want to see you again
-        I wanted to tell you that I
-        Can't even look at you
-        Without fighting urges to cry
-        You just seem so far away
+				And the rain comes down
+        With the weight that he bears
+        But he's been conditioned to accept the dares
+        That test his strength and will
+        And that gives him the license to kill
+        Just don't lose yourself to the greater good
+        Like so many others 4x
+        But I know he knows what I know
 		  `
 	  )
 	}
@@ -155,8 +186,8 @@ class Track6 extends Component{
 	outro() {
 		return (
 		  `
-        Leave me alone
-        I'm through
+        But if we're fighting a losing battle
+        How many more must we send out to sea?
 		  `
 	  )
 	}
@@ -238,4 +269,4 @@ class Track6 extends Component{
   }
 };
 // <a onClick={this.scrollToTop}>To the top!</a>
-export default Track6;
+export default Track11;
