@@ -4,6 +4,7 @@ import './index.css';
 
 import Home from './components/Home';
 import Bio from './components/Bio';
+import SampleTracks from './components/SampleTracks';
 import Footer from './components/Footer';
 
 class App extends Component {
@@ -14,6 +15,7 @@ class App extends Component {
 	  	  	<Switch>
 		        <Route exact path="/" component={Home}/>
 		        <Route exact path="/bio" component={Bio}/>
+		        <Route exact path="/sample-tracks" component={SampleTracks}/>
 	  	  	</Switch>
 	        <Footer />
 	     </div>
