@@ -137,7 +137,7 @@ class Track11 extends Component{
     )
   }
 
-  verseTwo() {
+  verseThree() {
     return (
       `
         Couldn't speak or breathe or even comprehend the total struggle
@@ -148,7 +148,7 @@ class Track11 extends Component{
     )
   }
   
-  chorusTwo() {
+  chorusThree() {
     return (
       `
         But 

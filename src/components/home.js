@@ -93,7 +93,7 @@ class Home extends Component {
 				{this.state.viewTrack ? this.showTrack() 
 					:
 					<MuiThemeProvider>
-						<div>
+						<div style={styles}>
 							<VideoTeaserTitle />
 							<VideoTeaser />
 						</div>
