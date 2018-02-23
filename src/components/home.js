@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 import Parallax from 'react-springy-parallax';
 
 import VideoTeaser from './VideoTeaser';
@@ -91,12 +92,13 @@ class Home extends Component {
 			<div>
 				{this.state.viewTrack ? this.showTrack() 
 					:
-					<div styles={styles}>
-						<VideoTeaserTitle />
-						<VideoTeaser />
-					</div>
+					<MuiThemeProvider>
+						<div>
+							<VideoTeaserTitle />
+							<VideoTeaser />
+						</div>
+					</MuiThemeProvider>
 				}
-
 			</div>
 		)
 	}
