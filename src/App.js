@@ -17,8 +17,7 @@ class App extends Component {
 		        <Route exact path="/bio" component={Bio}/>
 		        <Route exact path="/sample-tracks" component={SampleTracks}/>
 	  	  	</Switch>
-	        <Footer />
-	     </div>
+	      </div>
      </BrowserRouter>
     );
   }

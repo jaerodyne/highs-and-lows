@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 class Bio extends Component {
 	render() {
 		return (
-			<div>
+			<div className="bio">
 				<p>
 					Jillian Somera and the Beta Option have come a long way since their inception in 2015. Founded by Jillian Somera, the band was initially a solo project for the singer-songwriter. Somera wrote and composed all her songs the guitar, taking musical influence from Amy Winehouse, Incubus, and John Mayer alike forging a sound that Jillian herself refers to as Alternative Rock/R&B.
 				</p>

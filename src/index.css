@@ -79,7 +79,6 @@ pre.lyrics {
 .footer {
   opacity: 0.5;
   font-size: 16px;
-  text-align: center;
 }
 
 .social-links {
@@ -99,8 +98,8 @@ pre.lyrics {
   margin: 0.1em;
 }
 
-.copyright {
-  margin: 0;
+.bio {
+  color: black !important;
 }
 
 /*.subscribe {

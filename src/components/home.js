@@ -5,9 +5,11 @@ import Parallax from 'react-springy-parallax';
 import VideoTeaser from './VideoTeaser';
 import VideoTeaserTitle from './VideoTeaserTitle';
 import Subscribe from './Subscribe';
+import Bio from './Bio';
 import Concept from './Concept';
 import ConceptQuote from './ConceptQuote';
 import TempoChart from './TempoChart';
+import Footer from './Footer';
 
 import Track1 from './tracks/Track1';
 import Track2 from './tracks/Track2';
@@ -88,15 +90,48 @@ class Home extends Component {
 		    alignItems: 'center', 
 		    justifyContent: 'center'
 		}
+		const bio = {
+			backgroundColor: 'black'
+		}
 		return (
 			<div>
 				{this.state.viewTrack ? this.showTrack() 
 					:
 					<MuiThemeProvider>
-						<div style={styles}>
-							<VideoTeaserTitle />
-							<VideoTeaser />
-						</div>
+						<Parallax ref="parallax" pages={2}>
+
+							<Parallax.Layer
+				        offset={0}
+				        speed={2.4}
+				        style={styles}
+				      >
+					      <VideoTeaser />
+					    </Parallax.Layer>
+
+					    <Parallax.Layer
+				        offset={0}
+				        speed={1.5}
+				        style={styles}
+				      >
+								<VideoTeaserTitle />
+					    </Parallax.Layer>
+
+					    <Parallax.Layer
+				        offset={10}
+				        speed={1.5}
+				        style={bio}
+				      >
+								<Bio />
+					    </Parallax.Layer>
+							
+							<Parallax.Layer
+								offset={5}
+								speed={10}
+								style={styles}
+							>
+								<Footer />
+							</Parallax.Layer>
+						</Parallax>	
 					</MuiThemeProvider>
 				}
 			</div>
