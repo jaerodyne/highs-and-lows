@@ -3,7 +3,6 @@ import Parallax from 'react-springy-parallax';
 
 import VideoTeaser from './VideoTeaser';
 import VideoTeaserTitle from './VideoTeaserTitle';
-import Bio from './Bio';
 import Subscribe from './Subscribe';
 import Concept from './Concept';
 import ConceptQuote from './ConceptQuote';
@@ -22,8 +21,6 @@ import Track10 from './tracks/Track10';
 import Track11 from './tracks/Track11';
 import Track12 from './tracks/Track12';
 import Track13 from './tracks/Track13';
-
-import Footer from './Footer';
 
 class Home extends Component {
 
@@ -95,7 +92,8 @@ class Home extends Component {
 				{this.state.viewTrack ? this.showTrack() 
 					:
 					<div styles={styles}>
-						<Bio />
+						<VideoTeaserTitle />
+						<VideoTeaser />
 					</div>
 				}
 
