@@ -90,9 +90,6 @@ class Home extends Component {
 		    alignItems: 'center', 
 		    justifyContent: 'center'
 		}
-		const bio = {
-			backgroundColor: 'black'
-		}
 		return (
 			<div>
 				{this.state.viewTrack ? this.showTrack() 
@@ -102,7 +99,7 @@ class Home extends Component {
 
 							<Parallax.Layer
 				        offset={0}
-				        speed={2.4}
+				        speed={3}
 				        style={styles}
 				      >
 					      <VideoTeaser />
@@ -110,27 +107,28 @@ class Home extends Component {
 
 					    <Parallax.Layer
 				        offset={0}
-				        speed={1.5}
+				        speed={1.8}
 				        style={styles}
+				        onClick={() => this.refs.parallax.scrollTo(1)}
 				      >
 								<VideoTeaserTitle />
 					    </Parallax.Layer>
 
 					    <Parallax.Layer
-				        offset={10}
-				        speed={1.5}
-				        style={bio}
+				        offset={1}
+				        speed={1}
 				      >
 								<Bio />
 					    </Parallax.Layer>
 							
 							<Parallax.Layer
-								offset={5}
-								speed={10}
+								offset={1.4}
+								speed={3}
 								style={styles}
 							>
 								<Footer />
 							</Parallax.Layer>
+
 						</Parallax>	
 					</MuiThemeProvider>
 				}

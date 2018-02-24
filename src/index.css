@@ -1,6 +1,6 @@
 body {
   margin: 0;
-  color: #CCCCC8;
+  color: #000000;
   font-family: 'Barlow', sans-serif;
   padding: 0;
   font-size: 32px;
@@ -8,6 +8,7 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Permanent Marker';
+  opacity: 0.7;
   text-align: center;
 }
 
@@ -72,24 +73,22 @@ pre.lyrics {
 .background-video-title {
   color: white;
   font-weight: 200;
-  opacity: 0.8;
+  opacity: 0.9 !important;
   text-shadow: 1px 1px #202020;
 }
 
 .footer {
-  opacity: 0.5;
-  font-size: 16px;
+  font-size: 20px;
+  opacity: 0.7;
 }
 
 .social-links {
-  display: flex;
-  font-size: 28px;
-  list-style-type: none;
-  padding: 0.4em;
+  font-size: 24px;
+  padding: 0.8em;
 }
 
 .social-links a {
-  color: #CCCCC8;
+  color: black;
 }
 
 .social-links li {
@@ -99,10 +98,11 @@ pre.lyrics {
 }
 
 .bio {
-  color: black !important;
+  font-family: 'Raleway', sans-serif;
+  font-size: 20px;
+  padding: 0 20em 0 20em;
 }
 
-/*.subscribe {
-  text-align: center;
+.copyright {
+  font-size: 16px;
 }
-*/
