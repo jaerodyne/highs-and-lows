@@ -85,8 +85,20 @@ class Home extends Component {
 	}
 
 	render() {
+		const parallaxBkgd = {
+			backgroundColor: '#4a2f3c'
+		}
 		const bkgdImgStyles = {
 			backgroundImage: "url('../img/album-cover.jpg')"
+		}
+		const bkgdBioStyles = {
+			backgroundColor: 'white',
+			opacity: '0.9'
+		}
+		const bioTextStyles = {
+			display: 'flex',
+			alignItems: 'right',
+			justifyContent: 'right'
 		}
 		const styles = {
 	    display: 'flex', 
@@ -98,9 +110,10 @@ class Home extends Component {
 				{this.state.viewTrack ? this.showTrack() 
 					:
 					<MuiThemeProvider>
-						<Parallax ref="parallax" pages={2}>
+						<Parallax ref="parallax" pages={2} style={parallaxBkgd}>
 
 						<Parallax.Layer offset={0.7} speed={1} style={bkgdImgStyles} />
+						<Parallax.Layer offset={1} speed={1} style={bkgdBioStyles} />
 							
 							<Parallax.Layer
 				        offset={0}
@@ -120,7 +133,7 @@ class Home extends Component {
 
 					    <Parallax.Layer
 				        offset={0.99}
-				        speed={3}
+				        speed={2.8}
 				        style={styles}
 				      >
 				     		<h1 className="album-title-header">Highs and Lows</h1>
@@ -128,11 +141,13 @@ class Home extends Component {
 
 					    <Parallax.Layer
 				        offset={0.99}
-				        speed={1.4}
+				        speed={0.6}
 				        style={styles}
 				      >
-				     		<h2>Coming later in 2018</h2>
-				     		<h3>(We promise)</h3>
+				      	<div className="later-notice">
+					     		<h2>Coming later in 2018</h2>
+					     		<h3>(We promise)</h3>
+				      	</div>
 					    </Parallax.Layer>
 
 					    <Parallax.Layer
