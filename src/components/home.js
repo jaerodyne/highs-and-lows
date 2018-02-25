@@ -85,10 +85,13 @@ class Home extends Component {
 	}
 
 	render() {
+		const bkgdImgStyles = {
+			backgroundImage: "url('../img/album-cover.jpg')"
+		}
 		const styles = {
-		    display: 'flex', 
-		    alignItems: 'center', 
-		    justifyContent: 'center'
+	    display: 'flex', 
+	    alignItems: 'center', 
+	    justifyContent: 'center'
 		}
 		return (
 			<div>
@@ -97,9 +100,11 @@ class Home extends Component {
 					<MuiThemeProvider>
 						<Parallax ref="parallax" pages={2}>
 
+						<Parallax.Layer offset={0.7} speed={1} style={bkgdImgStyles} />
+							
 							<Parallax.Layer
 				        offset={0}
-				        speed={3}
+				        speed={2.3}
 				        style={styles}
 				      >
 					      <VideoTeaser />
@@ -109,14 +114,40 @@ class Home extends Component {
 				        offset={0}
 				        speed={1.8}
 				        style={styles}
-				        onClick={() => this.refs.parallax.scrollTo(1)}
 				      >
 								<VideoTeaserTitle />
 					    </Parallax.Layer>
 
 					    <Parallax.Layer
+				        offset={0.99}
+				        speed={3}
+				        style={styles}
+				      >
+				     		<h1 className="album-title-header">Highs and Lows</h1>
+					    </Parallax.Layer>
+
+					    <Parallax.Layer
+				        offset={0.99}
+				        speed={1.4}
+				        style={styles}
+				      >
+				     		<h2>Coming later in 2018</h2>
+				     		<h3>(We promise)</h3>
+					    </Parallax.Layer>
+
+					    <Parallax.Layer
+						    offset={1}
+						    speed={5}
+					    >
+					    	<div className="album-img">
+					    		<img src="../img/album-cover.jpg" alt="" />
+					    	</div>
+					    </Parallax.Layer>
+
+					    <Parallax.Layer
 				        offset={1}
-				        speed={1}
+				        speed={2}
+					     	onClick={() => this.refs.parallax.scrollTo(0)}
 				      >
 								<Bio />
 					    </Parallax.Layer>
