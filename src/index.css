@@ -96,32 +96,32 @@ pre.lyrics {
   float: left;
   margin: 0.1em;
 }
-
-/*FIX THIS*/
-.bio {
-  display: flex;
-  justify-content: right;
-}
 /*FIX THIS*/
 .later-notice {
   opacity: 1;
 }
 
+/*FIX THIS*/
+.bio {
+  float: right;
+  margin-top: 3em;
+  width: 60%;
+}
+
 .bio-text {
   font-family: 'Raleway', sans-serif;
-  font-size: 20px;
-  padding: 0 20em 0 20em;
+  font-size: 16px;
+  padding: 0 12em 0 12em;
 }
 
 .album-title-header {
   color: #4a2f3c;
   opacity: 1;
   text-shadow: 3px 3px 3px white;
-  /*border-color: solid 2px black;*/
 }
 
 .album-img img {
-  margin: 1em;
+  margin: 2em;
   height: 40%;
   width: 40%;
 }
@@ -130,6 +130,7 @@ pre.lyrics {
   font-size: 16px;
 }
 
+/*------ARROW------*/
 .arrow {
   opacity: 0;
   position: absolute;

@@ -140,19 +140,9 @@ class Home extends Component {
 					    </Parallax.Layer>
 
 					    <Parallax.Layer
-				        offset={0.99}
-				        speed={0.6}
-				        style={styles}
-				      >
-				      	<div className="later-notice">
-					     		<h2>Coming later in 2018</h2>
-					     		<h3>(We promise)</h3>
-				      	</div>
-					    </Parallax.Layer>
-
-					    <Parallax.Layer
 						    offset={1}
-						    speed={5}
+						    speed={4}
+					     	onClick={() => this.refs.parallax.scrollTo(0)}
 					    >
 					    	<div className="album-img">
 					    		<img src="../img/album-cover.jpg" alt="" />
@@ -161,8 +151,7 @@ class Home extends Component {
 
 					    <Parallax.Layer
 				        offset={1}
-				        speed={2}
-					     	onClick={() => this.refs.parallax.scrollTo(0)}
+				        speed={7}
 				      >
 								<Bio />
 					    </Parallax.Layer>
