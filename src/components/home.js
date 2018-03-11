@@ -91,19 +91,30 @@ class Home extends Component {
 		const bkgdImgStyles = {
 			backgroundImage: "url('../img/album-cover.jpg')"
 		}
+		const albumTitleStyles = {
+			display: 'flex', 
+	    alignItems: 'center', 
+	    justifyContent: 'center'
+		}
 		const bkgdBioStyles = {
 			backgroundColor: 'white',
 			opacity: '0.9'
 		}
+		const bioStyles = {
+			
+		}
 		const bioTextStyles = {
-			display: 'flex',
-			alignItems: 'right',
-			justifyContent: 'right'
+			marginLeft: 'auto'
 		}
 		const styles = {
 	    display: 'flex', 
-	    alignItems: 'center', 
-	    justifyContent: 'center'
+	    alignItems: 'center'
+		}
+		const footerStyles = {
+			display: 'flex',
+			justifyContent: 'center',
+			height: '100%',
+			width: '100%'
 		}
 		return (
 			<div>
@@ -112,12 +123,12 @@ class Home extends Component {
 					<MuiThemeProvider>
 						<Parallax ref="parallax" pages={2} style={parallaxBkgd}>
 
-						<Parallax.Layer offset={0.7} speed={1} style={bkgdImgStyles} />
-						<Parallax.Layer offset={1} speed={1} style={bkgdBioStyles} />
+						<Parallax.Layer offset={0.5} speed={0.6} style={bkgdImgStyles} />
+						<Parallax.Layer offset={1} speed={0.7} style={bkgdBioStyles} />
 							
 							<Parallax.Layer
 				        offset={0}
-				        speed={2.3}
+				        speed={2}
 				        style={styles}
 				      >
 					      <VideoTeaser />
@@ -132,34 +143,30 @@ class Home extends Component {
 					    </Parallax.Layer>
 
 					    <Parallax.Layer
-				        offset={0.99}
-				        speed={2.8}
-				        style={styles}
+				        offset={0.8}
+				        speed={0.7}
+				        style={albumTitleStyles}
 				      >
 				     		<h1 className="album-title-header">Highs and Lows</h1>
 					    </Parallax.Layer>
-
-					    <Parallax.Layer
-						    offset={1}
-						    speed={4}
-					     	onClick={() => this.refs.parallax.scrollTo(0)}
-					    >
-					    	<div className="album-img">
-					    		<img src="../img/album-cover.jpg" alt="" />
-					    	</div>
-					    </Parallax.Layer>
-
-					    <Parallax.Layer
-				        offset={1}
-				        speed={7}
-				      >
-								<Bio />
-					    </Parallax.Layer>
+			
+							<div style={bioStyles}>
+						    <Parallax.Layer
+							    offset={1}
+							    speed={3}
+						     	onClick={() => this.refs.parallax.scrollTo(0)}
+						    >
+						    	<div className="bio-container">
+						    		<img src="../img/album-cover.jpg" alt="" />
+						    		<Bio />
+						    	</div>
+						    </Parallax.Layer>
+							</div>/
 							
 							<Parallax.Layer
-								offset={1.4}
-								speed={3}
-								style={styles}
+								offset={1.75}
+								speed={1}
+								style={footerStyles}
 							>
 								<Footer />
 							</Parallax.Layer>

@@ -75,43 +75,8 @@ pre.lyrics {
   font-weight: 200;
   opacity: 0.9 !important;
   text-shadow: 1px 1px #202020;
-}
-
-.footer {
-  font-size: 20px;
-  opacity: 0.7;
-}
-
-.social-links {
-  font-size: 24px;
-  padding: 0.8em;
-}
-
-.social-links a {
-  color: black;
-}
-
-.social-links li {
-  display: block;
-  float: left;
-  margin: 0.1em;
-}
-/*FIX THIS*/
-.later-notice {
-  opacity: 1;
-}
-
-/*FIX THIS*/
-.bio {
-  float: right;
-  margin-top: 3em;
-  width: 60%;
-}
-
-.bio-text {
-  font-family: 'Raleway', sans-serif;
-  font-size: 16px;
-  padding: 0 12em 0 12em;
+  text-align: center;
+  width: 100%;
 }
 
 .album-title-header {
@@ -120,15 +85,58 @@ pre.lyrics {
   text-shadow: 3px 3px 3px white;
 }
 
-.album-img img {
-  margin: 2em;
-  height: 40%;
-  width: 40%;
+.bio-container {
+  display: flex;
+  padding: 1em;
+  overflow: hidden;
+}
+
+.bio-container img {
+  height: 32%;
+  margin: 1em;
+  width: 32%;
+}
+
+.bio {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 0 1em 0 1em;
+}
+
+.bio-text {
+  font-family: 'Raleway', sans-serif;
+  font-size: 16px;
+}
+
+.footer {
+  font-size: 20px;
+  opacity: 0.7;
+}
+
+.footer ul {
+  display: flex;
+  font-size: 24px;
+  justify-content: center;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+.footer a {
+  color: #000;
+  opacity: 0.9;
 }
 
 .copyright {
+  display: flex;
   font-size: 16px;
+  justify-content: center;
+  width: 100%;
 }
+
 
 /*------ARROW------*/
 .arrow {
