@@ -116,7 +116,7 @@ pre.lyrics {
 }
 
 .bio-album-cover {
-  text-align: center;
+  text-align: right;
 }
 
 .bio-album-cover img {
@@ -124,12 +124,22 @@ pre.lyrics {
   width: 80%;
 }
 
+.bkgd-bio {
+  background-color: white;
+  border: solid 10px white !important;
+  opacity: 0.99;
+  outline-style: solid;
+  outline-color: white;
+  height: 100%;
+  width: 100%;
+}
+
 .bkgd-img {
   width: 100%;
 }
 
 .bio {
-  padding: 0 1em 0 1em;
+  padding: 1em 4em 1em 4em;
 }
 
 .bio-text {
@@ -154,6 +164,7 @@ pre.lyrics {
 
 .footer li {
   display: inline;
+  padding: 0.2em;
 }
 
 .footer a {
