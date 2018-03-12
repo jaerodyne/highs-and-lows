@@ -110,10 +110,10 @@ class Home extends Component {
 						<Parallax ref="parallax" pages={2} style={parallaxBkgd}>
 
 							<Row>
-								<Col>
+								<Col md="12">
 									<Parallax.Layer offset={0.6} speed={0.6}>
-										<div>
-											<img src="../img/album-cover.jpg" alt="" className="bkgd-img"/>
+										<div className="bkgd-img">
+											<img src="../img/album-cover.jpg" alt=""/>
 										</div>
 									</Parallax.Layer>
 								</Col>
@@ -156,7 +156,7 @@ class Home extends Component {
 							</Row>
 
 							<Row className="bio-row">
-								<Col xs="12" md="5" className="no-col-margin">
+								<Col xs="12" s="12" md="5" className="no-col-margin hide-album">
 							    <Parallax.Layer
 								    offset={1}
 								    speed={3}
@@ -167,7 +167,7 @@ class Home extends Component {
 							    	</div>
 							    </Parallax.Layer>
 								</Col>
-								<Col xs="12" md="7" className="no-col-margin">
+								<Col xs="12" s="12" md="7" className="no-col-margin bio-mobile">
 									<Parallax.Layer
 									    offset={1}
 									    speed={7}

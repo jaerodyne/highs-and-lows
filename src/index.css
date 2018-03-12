@@ -134,7 +134,7 @@ pre.lyrics {
   width: 100%;
 }
 
-.bkgd-img {
+.bkgd-img img {
   width: 100%;
 }
 
@@ -248,4 +248,46 @@ pre.lyrics {
   100% {
     opacity: 0;
   }
+}
+
+/*MEDIA QUERIES*/
+@media only screen and (max-width: 1366px) {
+  .album-title-header {
+    display: none;
+  }
+  .bkgd-img {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  .hide-album {
+    display: none;
+  }
+  .bio {
+    padding: 0;
+    margin: 0;
+  }
+  .bio-mobile {
+    margin: 0;
+    padding: 0;
+  }
+  .bio-row {
+    border: solid 1px black;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+  }
+  .bio-text {
+    margin: 0;
+    overflow: scroll;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    border: solid 1px black;
+  }
+  .bkgd-bio {
+    text-align: center;
+  }
+  /*.bio-album-cover {
+  }*/
 }
