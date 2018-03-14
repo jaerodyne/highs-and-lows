@@ -177,7 +177,7 @@ class Home extends Component {
 								</Col>
 							</Row>
 							
-							<Row>
+							<Row className="footer-row">
 								<Parallax.Layer
 									offset={1.7}
 									speed={1}

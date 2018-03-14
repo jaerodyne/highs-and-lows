@@ -251,6 +251,24 @@ pre.lyrics {
 }
 
 /*MEDIA QUERIES*/
+@media only screen and (max-width: 812px) {
+  body {
+    padding-bottom:60px;   /* Height of the footer */
+  }
+  .bio-text {
+    height: 100vh;
+    overflow-y: scroll;
+    margin: 1em;
+    padding: 2em 2em 5em 2em;
+    width: 100%;
+  }
+  .footer-row {
+    position:absolute;
+    bottom:0;
+    width:100%;
+    height:60px;   /* Height of the footer */
+  }
+}
 @media only screen and (max-width: 1366px) {
   .album-title-header {
     display: none;
@@ -275,19 +293,11 @@ pre.lyrics {
     border: solid 1px black;
     text-align: center;
     margin: 0;
-    padding: 0;
+    /*padding: 0;*/
     width: 100%;
   }
-  .bio-text {
-    margin: 0;
-    overflow: scroll;
-    overflow-x: hidden;
-    overflow-y: scroll;
-    border: solid 1px black;
-  }
   .bkgd-bio {
+    overflow: hidden;
     text-align: center;
   }
-  /*.bio-album-cover {
-  }*/
 }
