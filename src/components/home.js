@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 import Parallax from 'react-springy-parallax';
 import { Container, Row, Col } from 'reactstrap';
+import Responsive from 'react-responsive';
 
 import VideoTeaser from './VideoTeaser';
 import VideoTeaserTitle from './VideoTeaserTitle';
@@ -25,6 +26,11 @@ import Track10 from './tracks/Track10';
 import Track11 from './tracks/Track11';
 import Track12 from './tracks/Track12';
 import Track13 from './tracks/Track13';
+
+const Desktop = props => <Responsive {...props} minWidth={992} />;
+const Tablet = props => <Responsive {...props} minWidth={768} maxWidth={991} />;
+const Mobile = props => <Responsive {...props} maxWidth={767} />;
+const Default = props => <Responsive {...props} minWidth={768} />;
 
 class Home extends Component {
 
@@ -83,7 +89,7 @@ class Home extends Component {
 
 	resetView() {
 		this.setState({viewTrack: null})
-	}
+	} 
 
 	render() {
 		const parallaxBkgd = {
@@ -106,87 +112,105 @@ class Home extends Component {
 				{this.state.viewTrack ? this.showTrack() 
 					:
 					<MuiThemeProvider>
-							
-						<Parallax ref="parallax" pages={2} style={parallaxBkgd}>
+						<div>
+							<Desktop>
+								<Parallax ref="parallax" pages={2} style={parallaxBkgd}>
 
-							<Row>
-								<Col md="12">
-									<Parallax.Layer offset={0.6} speed={0.6}>
-										<div className="bkgd-img">
-											<img src="../img/album-cover.jpg" alt=""/>
-										</div>
-									</Parallax.Layer>
-								</Col>
-							</Row>
-							
-							<Row className="container-fluid">
-								<Parallax.Layer offset={1} speed={0.7} className="bkgd-bio" />
-							</Row>
-							
-							<Row>
-								<Col sm="12">
-									<Parallax.Layer
-						        offset={0}
-						        speed={2}
-						      >
-							      <VideoTeaser />
-							    </Parallax.Layer>
-								</Col>	
-						  </Row>
-							<Row>
-								<Col sm="12 text-center">
-							    <Parallax.Layer
-						        offset={0}
-						        speed={1.8}
-						      >
-										<VideoTeaserTitle />
-							    </Parallax.Layer>
-							  </Col>
-							</Row>
-							
-							<Row>
-						    <Parallax.Layer
-					        offset={0.8}
-					        speed={0.7}
-					      >
-					      	<div className="album-title-header">
-						     		<h1>Highs and Lows</h1>
-					      	</div>
-						    </Parallax.Layer>
-							</Row>
+									<Row>
+										<Col md="12">
+											<Parallax.Layer offset={0.6} speed={0.6}>
+												<div className="bkgd-img">
+													<img src="../img/album-cover.jpg" alt=""/>
+												</div>
+											</Parallax.Layer>
+										</Col>
+									</Row>
+									
+									<Row>
+										<Parallax.Layer offset={1} speed={0.7} className="bkgd-bio" />
+									</Row>
+									
+									<Row>
+										<Col sm="12">
+											<Parallax.Layer
+								        offset={0}
+								        speed={2}
+								      >
+									      <VideoTeaser />
+									    </Parallax.Layer>
+										</Col>	
+								  </Row>
+									<Row>
+										<Col sm="12 text-center">
+									    <Parallax.Layer
+								        offset={0}
+								        speed={1.8}
+								      >
+												<VideoTeaserTitle />
+									    </Parallax.Layer>
+									  </Col>
+									</Row>
+									
+									<Row>
+								    <Parallax.Layer
+							        offset={0.8}
+							        speed={0.7}
+							      >
+							      	<div className="album-title-header">
+								     		<h1>Highs and Lows</h1>
+							      	</div>
+								    </Parallax.Layer>
+									</Row>
 
-							<Row className="bio-row">
-								<Col xs="12" s="12" md="5" className="no-col-margin hide-album">
-							    <Parallax.Layer
-								    offset={1}
-								    speed={3}
-							     	onClick={() => this.refs.parallax.scrollTo(0)}
-							    >
-							    	<div className="bio-album-cover">
+									<Row className="bio-row">
+										<Col sm="12" md="5" className="no-col-margin hide-album">
+									    <Parallax.Layer
+										    offset={1}
+										    speed={3}
+									     	onClick={() => this.refs.parallax.scrollTo(0)}
+									    >
+									    	<div className="bio-album-cover">
+									    		<img src="../img/album-cover.jpg" alt=""/>
+									    	</div>
+									    </Parallax.Layer>
+										</Col>
+										<Col sm="12" md="7" className="no-col-margin bio-mobile">
+											<Parallax.Layer
+											    offset={1}
+											    speed={7}
+									    >
+									    		<Bio />
+									    </Parallax.Layer>
+										</Col>
+									</Row>
+									
+									<Row className="footer-row">
+										<Parallax.Layer
+											offset={1.7}
+											speed={1}
+										>
+											<Footer />
+										</Parallax.Layer>
+									</Row>
+								
+								</Parallax>	
+							</Desktop>
+
+							<Mobile>
+								<Row>
+									<Col xs="12" className="mobile-background">
+								  	<VideoTeaserTitle/>
+									</Col>
+								</Row>
+								<Row className="mobile-album-cover">
+									<Col xs="12">
+								  	<div className="bio-album-cover">
 							    		<img src="../img/album-cover.jpg" alt=""/>
 							    	</div>
-							    </Parallax.Layer>
-								</Col>
-								<Col xs="12" s="12" md="7" className="no-col-margin bio-mobile">
-									<Parallax.Layer
-									    offset={1}
-									    speed={7}
-							    >
-							    		<Bio />
-							    </Parallax.Layer>
-								</Col>
-							</Row>
-							
-							<Row className="footer-row">
-								<Parallax.Layer
-									offset={1.7}
-									speed={1}
-								>
-									<Footer />
-								</Parallax.Layer>
-							</Row>
-
-						</Parallax>	
+									</Col>
+								</Row>
+							</Mobile>
+						</div>
 					</MuiThemeProvider>
 				}
 			</div>
