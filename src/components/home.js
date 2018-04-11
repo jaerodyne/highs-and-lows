@@ -127,7 +127,9 @@ class Home extends Component {
 									</Row>
 									
 									<Row>
-										<Parallax.Layer offset={1} speed={0.7} className="bkgd-bio" />
+										<Col md="12">
+											<Parallax.Layer offset={1} speed={0.7} className="bkgd-bio" />
+										</Col>
 									</Row>
 									
 									<Row>
@@ -202,11 +204,21 @@ class Home extends Component {
 								  	<VideoTeaserTitle/>
 									</Col>
 								</Row>
-								<Row className="mobile-album-cover">
+								<Row>
 									<Col xs="12">
 								  	<div className="bio-album-cover">
 							    		<img src="../img/album-cover.jpg" alt=""/>
 							    	</div>
+									</Col>
+								</Row>
+								<Row>
+									<Col xs="12">
+										<Bio />
+									</Col>
+								</Row>
+								<Row className="footer-row">
+									<Col xs="12">
+										<Footer />
 									</Col>
 								</Row>
 							</Mobile>
