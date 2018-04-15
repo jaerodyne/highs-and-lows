@@ -14,6 +14,7 @@
     "react-chartjs-2": "^2.6.4",
     "react-cl-audio-player": "^2.0.0",
     "react-dom": "^16.2.0",
+    "react-responsive": "^4.1.0",
     "react-router-dom": "^4.2.2",
     "react-scripts": "1.0.17",
     "react-scroll": "^1.6.4",
@@ -25,5 +26,8 @@
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
+  },
+  "devDependencies": {
+    "case-sensitive-paths-webpack-plugin": "^2.1.2"
   }
 }
