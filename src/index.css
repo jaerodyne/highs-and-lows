@@ -196,12 +196,19 @@ pre.lyrics {
 }
 
 .subscribe-text {
-  /*border: solid;*/
   padding: 0.5em;
 }
 
+.subscribe-text p {
+  font-size: 16px;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+}
+
 .subscribe-text input {
+  color: #212529;
   margin-top: 1em;
+  text-align: center;
 }
 
 .subscribe-text button {
@@ -209,12 +216,10 @@ pre.lyrics {
 }
 
 .subscribe-arrow {
-  content: "\u25BD";
   cursor: pointer;
   font-size: 16px;
   opacity: 0.6;
   text-align: right;
-  /*padding: 0;*/
 }
 
 .subscribe-arrow-closed {
