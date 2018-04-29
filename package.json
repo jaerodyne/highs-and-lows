@@ -12,6 +12,7 @@
     "material-ui": "^0.20.0",
     "moment": "^2.22.1",
     "react": "^16.2.0",
+    "react-bottom-sheet": "^1.1.1",
     "react-chartjs-2": "^2.6.4",
     "react-cl-audio-player": "^2.0.0",
     "react-dom": "^16.2.0",

@@ -1,16 +1,16 @@
 import React, { Component } from 'react';
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 import Parallax from 'react-springy-parallax';
-import { Container, Row, Col } from 'reactstrap';
+import { Row, Col } from 'reactstrap';
 import Responsive from 'react-responsive';
 
 import VideoTeaser from './VideoTeaser';
 import VideoTeaserTitle from './VideoTeaserTitle';
 import Subscribe from './Subscribe';
 import Bio from './Bio';
-import Concept from './Concept';
-import ConceptQuote from './ConceptQuote';
-import TempoChart from './TempoChart';
+// import Concept from './Concept';
+// import ConceptQuote from './ConceptQuote';
+// import TempoChart from './TempoChart';
 import Footer from './Footer';
 
 import Track1 from './tracks/Track1';
@@ -30,7 +30,6 @@ import Track13 from './tracks/Track13';
 const Desktop = props => <Responsive {...props} minWidth={992} />;
 const Tablet = props => <Responsive {...props} minWidth={768} maxWidth={991} />;
 const Mobile = props => <Responsive {...props} maxWidth={767} />;
-const Default = props => <Responsive {...props} minWidth={768} />;
 
 class Home extends Component {
 
@@ -44,7 +43,7 @@ class Home extends Component {
 		this.getTrack = this.getTrack.bind(this)
 		this.showTrack = this.showTrack.bind(this)
 		this.resetView = this.resetView.bind(this)
-	}
+  }
 
 	getTrack = (props) => {
 		this.setState({viewTrack: props})
@@ -94,17 +93,6 @@ class Home extends Component {
 	render() {
 		const parallaxBkgd = {
 			backgroundColor: '#4a2f3c'
-		}
-		const bkgdBioStyles = {
-			backgroundColor: 'white',
-			opacity: '0.99',
-			outlineStyle: 'solid',
-	    outlineColor: 'white',
-			height: '100%',
-			width: '100%'
-		}
-		const styles = {
-	    // border: 'solid 1px black'
 		}
 		return (
 			<div>
@@ -194,7 +182,14 @@ class Home extends Component {
 										</Parallax.Layer>
 									</Row>
 								
-								</Parallax>	
+								</Parallax>
+
+								<Row className="float-right subscribe">
+									<Col sm={{ size: 8, offset: 4 }}>
+										<Subscribe />
+									</Col>
+								</Row>
+								
 							</Desktop>
 
 							<Tablet>

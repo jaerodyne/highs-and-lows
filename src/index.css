@@ -179,6 +179,50 @@ pre.lyrics {
   width: 100%;
 }
 
+.subscribe {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  margin-right: 15px !important;
+}
+
+.subscribe form {
+  background-color: #f8f9fa;
+  border: dashed 2px #dee2e6;
+  padding: 0.5em 1em 0 1em;
+  opacity: 0.7;
+  width: 100%;
+}
+
+.subscribe-text {
+  /*border: solid;*/
+  padding: 0.5em;
+}
+
+.subscribe-text input {
+  margin-top: 1em;
+}
+
+.subscribe-text button {
+  margin: 1em 0 0 0;
+}
+
+.subscribe-arrow {
+  content: "\u25BD";
+  cursor: pointer;
+  font-size: 16px;
+  opacity: 0.6;
+  /*padding: 0;*/
+}
+
+.subscribe-arrow-closed {
+  cursor: pointer;
+  font-size: 16px;
+  opacity: 0.6;
+  padding: 0;
+  text-align: right;
+}
+
 /*------ARROW------*/
 .arrow {
   opacity: 0;

@@ -5,7 +5,6 @@ import './index.css';
 import Home from './components/Home';
 import Bio from './components/Bio';
 import SampleTracks from './components/SampleTracks';
-import Footer from './components/Footer';
 
 class App extends Component {
   render() {
