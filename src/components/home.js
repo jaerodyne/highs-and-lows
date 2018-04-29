@@ -183,12 +183,11 @@ class Home extends Component {
 									</Row>
 								
 								</Parallax>
-
-								<Row className="float-right subscribe">
-									<Col sm={{ size: 8, offset: 4 }}>
+								<div className="float-right">
+									<Row className="subscribe float-right">
 										<Subscribe />
-									</Col>
-								</Row>
+									</Row>
+								</div>
 								
 							</Desktop>
 

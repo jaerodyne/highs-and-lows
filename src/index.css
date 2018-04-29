@@ -180,10 +180,12 @@ pre.lyrics {
 }
 
 .subscribe {
+  /*border: solid;*/
   position: fixed;
   bottom: 0;
   right: 0;
   margin-right: 15px !important;
+  /*width: 25%;*/
 }
 
 .subscribe form {
@@ -191,7 +193,6 @@ pre.lyrics {
   border: dashed 2px #dee2e6;
   padding: 0.5em 1em 0 1em;
   opacity: 0.7;
-  width: 100%;
 }
 
 .subscribe-text {
@@ -212,6 +213,7 @@ pre.lyrics {
   cursor: pointer;
   font-size: 16px;
   opacity: 0.6;
+  text-align: right;
   /*padding: 0;*/
 }
 

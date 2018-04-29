@@ -11,6 +11,8 @@ class Subscribe extends Component {
 	  	email: '',
       invalidEmail: false,
       showSubscribe: false,
+      showSuccess: false,
+      showFailure: false,
       validationMsg: ''
 	  };
     
@@ -44,45 +46,53 @@ class Subscribe extends Component {
       this.setState({invalidEmail: false})
     }
 
-    // const URL = `http://localhost:3000`
+    const URL = `http://localhost:3000`
     
-    // fetch(`${URL}/subscribers`, {
-    //  method: 'POST',
-    //  headers: {
-    //    'Accept': 'application/json',
-    //    'Content-Type': 'application/json'
-    //  },
-    //  body: JSON.stringify({
-    //     "subscriber": {
-    //      "email": this.state.email
-    //     }
-    //  }),
-    // })
-    // .then(function(response) {
-    //  console.log(response)
-    //  return response.json()
-    // }).catch((error) => {
-    //    return error
-    // })
+    const response = fetch(`${URL}/subscribers`, {
+     method: 'POST',
+     headers: {
+       'Accept': 'application/json',
+       'Content-Type': 'application/json'
+     },
+     body: JSON.stringify({
+        "subscriber": {
+         "email": 123
+        }
+     }),
+    })
+    .then(function(response) {
+      return response
+    })
+    .catch((error) => {
+      return error
+    })
 
+    // if(json.status === 201) {
+    //     console.log(json.status)
+    //     this.setState({showSuccess: true})
+    //   } else {
+    //     this.setState({showFailure: true})
+    //   }
   }
 
   subscribeText() {
     return (
       <div className="subscribe-text">
         <h4>Get updates on our debut album release</h4>
-        <Input invalid={this.state.invalidEmail} onChange={this.onChange} placeholder="youremail@example.com" type="email"/>
+        <Input invalid={this.state.invalidEmail} onChange={this.onChange} placeholder="youremail@here.com" type="email"/>
         <FormFeedback>{this.state.validationMsg}</FormFeedback>
+        {this.state.showSuccess ? "Success!" : null }
+        {this.state.showFailure ? "Error" : null }
         <Button color="primary" type="submit">Submit</Button>
       </div>
     )
   }
 
-	render() {
-		return (
-			<Form onSubmit={this.onSubmit} className="text-center">
+  render() {
+    return (
+      <Form onSubmit={this.onSubmit} className="text-center">
         <FormGroup>
-          <div className="subscribe-arrow" onClick={this.onClick}>{'\u25BD'}</div>
+          <div className="subscribe-arrow" onClick={this.onClick}>{ this.state.showSubscribeText ? '\u25BD' : '\u25B2' }</div>
           {this.state.showSubscribeText ? this.subscribeText() : null }
         </FormGroup>
       </Form>
