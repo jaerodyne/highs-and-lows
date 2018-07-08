@@ -107,7 +107,7 @@ class Home extends Component {
 										<Col md="12">
 											<Parallax.Layer offset={0.6} speed={0.6}>
 												<div className="bkgd-img">
-													<img src="../img/album-cover.jpg" alt=""/>
+													<img src="../img/album-cover-background.jpg" alt=""/>
 												</div>
 											</Parallax.Layer>
 										</Col>
