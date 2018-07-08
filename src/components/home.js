@@ -185,7 +185,7 @@ class Home extends Component {
 								</Parallax>
 								<div className="float-right">
 									<Row className="subscribe float-right">
-										<Subscribe />
+										
 									</Row>
 								</div>
 								
