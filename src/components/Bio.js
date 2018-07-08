@@ -14,7 +14,7 @@ class Bio extends Component {
 					</p>
 					
 					<p>
-						To date, the band has performed at various venues around Chicago, such as The Wire, House of Blues Foundation Room, Bottom Lounge, and the Elbo Room. Currently, they are in the studio finishing up their debut album, Highs and Lows, and are planning to have a release party later this year. 
+						To date, the band has performed at various venues around Chicago, such as The Wire, House of Blues Foundation Room, Bottom Lounge, and the Elbo Room. Currently, they are in the studio finishing up their debut album, Highs and Lows, and are planning to have a release party on August 11th, 2018. You can get your tickets	<a href="http://bit.ly/jsbetaoption-presale">here</a>.
 					</p>
 				</div>
 			</div>
