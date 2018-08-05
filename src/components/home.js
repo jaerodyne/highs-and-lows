@@ -92,6 +92,7 @@ class Home extends Component {
 
 	render() {
 		const parallaxBkgd = {
+			// backgroundColor: 'white'
 			backgroundColor: '#4a2f3c'
 		}
 		return (
@@ -101,7 +102,7 @@ class Home extends Component {
 					<MuiThemeProvider>
 						<div>
 							<Desktop>
-								<Parallax ref="parallax" pages={2} style={parallaxBkgd}>
+								<Parallax ref="parallax" pages={3}>
 
 									<Row>
 										<Col md="12">
@@ -114,10 +115,15 @@ class Home extends Component {
 									</Row>
 									
 									<Row>
-										<Col md="12">
-											<Parallax.Layer offset={1} speed={0.7} className="bkgd-bio" />
-										</Col>
-									</Row>
+										<Col sm="12">
+									    <Parallax.Layer
+								        offset={1.6}
+								        speed={1}
+								        style={{backgroundColor: '#212529'}}
+								      >
+								      </Parallax.Layer>
+								    </Col>
+						      </Row>
 									
 									<Row>
 										<Col sm="12">
@@ -142,8 +148,8 @@ class Home extends Component {
 									
 									<Row>
 								    <Parallax.Layer
-							        offset={0.8}
-							        speed={0.7}
+							        offset={0.9}
+							        speed={1.1}
 							      >
 							      	<div className="album-title-header">
 								     		<h1>Highs and Lows</h1>
@@ -151,12 +157,60 @@ class Home extends Component {
 								    </Parallax.Layer>
 									</Row>
 
+									<Row>
+										<Col sm="12">
+											<Parallax.Layer offset={1} speed={0.8} style={parallaxBkgd} />
+										</Col>
+									</Row>
+
+									<Row>
+										<Col sm="12">
+											<Parallax.Layer offset={1} speed={1} style={{backgroundColor: '#212529'}} />
+										</Col>
+									</Row>
+
+									<Row>
+										<Col sm="12">
+									    <Parallax.Layer
+								        offset={1.5}
+								        speed={1.5}
+								        style={{backgroundColor: '#212529'}}
+								      >
+								      	<div className="text-center">
+									      	<Col sm="12">
+									      		<img src="../img/google-play-badge.png" width="11%" height="11%" style={{padding: '6px', verticalAlign: 'middle'}}/>
+									      	</Col>
+									      	<Col sm="12">
+									      		<img src="../img/us-uk-itunes-store-get-badge-rgb-012618.svg" width="11%" height="11%" style={{padding: '7px', verticalAlign: 'middle'}}/>
+									      	</Col>
+									      	<Col sm="12">
+									      		<img src="../img/amazon-logo-grey.png" width="11%" height="11%"style={{padding: '6px', verticalAlign: 'middle'}}/>
+									      	</Col>
+									      	<Col sm="12">
+									      		<img src="../img/us-uk-apple-music-lockup-all-white.svg" width="11%" height="11%" style={{padding: '7px', verticalAlign: 'middle'}}/>
+									      	</Col>
+									      	<Col sm="12">
+									      		<img src="../img/bandcamp-logotype-light-128.png" width="12%" height="12%"style={{verticalAlign: 'middle'}}/>
+									      	</Col>
+									      	<Col sm="12">
+									      		<img src="../img/tidal-logo.png" width="10%" height="10%" style={{verticalAlign: 'middle'}}/>
+									      	</Col>
+									      	<Col sm="12">
+										    		<iframe src="https://open.spotify.com/follow/1/?uri=spotify:artist:3qQ0Zv5eTJIbeAnSHyxXef?si=d2ty8sNTRg6N2Rm2v4-dLQ&size=detail&theme=dark" width="314" height="60" scrolling="no" frameBorder="0" style={{border: 'none', overflow: 'hidden'}} allowtransparency="true">
+										    		</iframe>
+									      	</Col>
+								      	</div>
+									    </Parallax.Layer>
+									  </Col>
+									</Row>
+
 									<Row className="bio-row">
 										<Col sm="12" md="5" className="no-col-margin hide-album">
 									    <Parallax.Layer
-										    offset={1}
+										    offset={2}
 										    speed={3}
-									     	onClick={() => this.refs.parallax.scrollTo(0)}
+									     	onClick={() => this.refs.parallax.scrollTo(1)}
+									     	style={{backgroundColor: 'white'}}
 									    >
 									    	<div className="bio-album-cover">
 									    		<img src="../img/album-cover.jpg" alt=""/>
@@ -165,17 +219,18 @@ class Home extends Component {
 										</Col>
 										<Col sm="12" md="7" className="no-col-margin bio-mobile">
 											<Parallax.Layer
-											    offset={1}
+											    offset={2}
 											    speed={7}
+										     	style={{backgroundColor: 'white'}}
 									    >
 									    		<Bio />
 									    </Parallax.Layer>
 										</Col>
 									</Row>
-									
+
 									<Row className="footer-row">
 										<Parallax.Layer
-											offset={1.7}
+											offset={2.7}
 											speed={1}
 										>
 											<Footer />
