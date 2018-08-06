@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Button, Form, FormGroup, Input, FormFeedback } from 'reactstrap';
 // import subscribeUser from '../actions/index';
-const EMAIL_REGEX = /^[a-zA-Z0-9.!#$%&'*+\/=?^_`{|}~-]+@[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?(?:\.[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?)*$/
+// const EMAIL_REGEX = /^[a-zA-Z0-9.!#$%&'*+\/=?^_`{|}~-]+@[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?(?:\.[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?)*$/
 
 class Subscribe extends Component {
 
@@ -24,26 +24,26 @@ class Subscribe extends Component {
 	}
 
   createSubscriber(email){
-    const URL = `http://localhost:3000`
+    // const URL = `http://localhost:3000`;
     
-    const response = fetch(`${URL}/subscribers`, {
-     method: 'POST',
-     headers: {
-       'Accept': 'application/json',
-       'Content-Type': 'application/json'
-     },
-     body: JSON.stringify({
-        "subscriber": {
-         "email": email
-        }
-     }),
-    })
-    .then(function(response) {
-      return response
-    })
-    .catch((error) => {
-      return error
-    })
+    // const response = fetch(`${URL}/subscribers`, {
+    //  method: 'POST',
+    //  headers: {
+    //    'Accept': 'application/json',
+    //    'Content-Type': 'application/json'
+    //  },
+    //  body: JSON.stringify({
+    //     "subscriber": {
+    //      "email": email
+    //     }
+    //  }),
+    // })
+    // .then(function(response) {
+    //   return response
+    // })
+    // .catch((error) => {
+    //   return error;
+    // });
 
     // if(json.status === 201) {
     //     console.log(json.status)
@@ -75,15 +75,15 @@ class Subscribe extends Component {
         validationMsg: "That email doesn't exist. Maybe it's your other one?"
       })
     } else {
-      if (EMAIL_REGEX.test(this.state.email)) {
-        this.setState({invalidEmail: false})
-        this.createSubscriber(this.state.email)
-      } else {
-        this.setState({
-          invalidEmail: true,
-          validationMsg: "Oops, something went wrong."
-        })
-      }
+      // if (EMAIL_REGEX.test(this.state.email)) {
+      //   this.setState({invalidEmail: false})
+      //   this.createSubscriber(this.state.email)
+      // } else {
+      //   this.setState({
+      //     invalidEmail: true,
+      //     validationMsg: "Oops, something went wrong."
+      //   })
+      // }
     }
   }
 
