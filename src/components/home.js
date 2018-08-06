@@ -179,32 +179,32 @@ class Home extends Component {
 								      	<div className="text-center">
 									      	<Col sm="12">
 									      		<a href="http://bit.ly/highsandlows-googleplay">
-										      		<img src="../img/google-play-badge.png" width="11%" height="11%" style={{padding: '6px', verticalAlign: 'middle'}}/>
+										      		<img src="../img/google-play-badge.png" width="11%" height="11%" style={{padding: '6px'}}/>
 										      	</a>
 									      	</Col>
 									      	<Col sm="12">
-									      		<a href="http://bit.ly/highsandlows-apple">
-										      		<img src="../img/us-uk-itunes-store-get-badge-rgb-012618.svg" width="11%" height="11%" style={{padding: '7px', verticalAlign: 'middle'}}/>
+									      		<a href="http://bit.ly/highsandlows-itunes">
+										      		<img src="../img/us-uk-itunes-store-get-badge-rgb-012618.svg" width="11%" height="11%" style={{padding: '7px'}}/>
 										      	</a>
 									      	</Col>
 									      	<Col sm="12">
 									      		<a href="http://bit.ly/highsandlows-amazon">
-										      		<img src="../img/amazon-logo-grey.png" width="11%" height="11%"style={{padding: '6px', verticalAlign: 'middle'}}/>
+										      		<img src="../img/amazon-logo-grey.png" width="11%" height="11%"style={{padding: '6px'}}/>
 										      	</a>
 									      	</Col>
 									      	<Col sm="12">
-									      		<a href="http://bit.ly/highsandlows-apple">
-										      		<img src="../img/us-uk-apple-music-lockup-all-white.svg" width="11%" height="11%" style={{padding: '7px', verticalAlign: 'middle'}}/>
+									      		<a href="http://bit.ly/highsandlows-applemusic">
+										      		<img src="../img/us-uk-apple-music-lockup-all-white.svg" width="11%" height="11%" style={{padding: '7px'}}/>
 										      	</a>
 									      	</Col>
 									      	<Col sm="12">
 									      		<a href="http://bit.ly/highsandlows-album">
-										      		<img src="../img/bandcamp-logotype-light-128.png" width="12%" height="12%"style={{verticalAlign: 'middle'}}/>
+										      		<img src="../img/bandcamp-logotype-light-128.png" width="12%" height="12%" />
 										      	</a>
 									      	</Col>
 									      	<Col sm="12">
 									      		<a href="http://bit.ly/highsandlows-tidal">
-										      		<img src="../img/tidal-logo.png" width="10%" height="10%" style={{verticalAlign: 'middle'}}/>
+										      		<img src="../img/tidal-logo.png" width="10%" height="10%" />
 										      	</a>
 									      	</Col>
 									      	<Col sm="12">
