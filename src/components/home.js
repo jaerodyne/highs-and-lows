@@ -178,26 +178,37 @@ class Home extends Component {
 								      >
 								      	<div className="text-center">
 									      	<Col sm="12">
-									      		<img src="../img/google-play-badge.png" width="11%" height="11%" style={{padding: '6px', verticalAlign: 'middle'}}/>
+									      		<a href="http://bit.ly/highsandlows-googleplay">
+										      		<img src="../img/google-play-badge.png" width="11%" height="11%" style={{padding: '6px', verticalAlign: 'middle'}}/>
+										      	</a>
 									      	</Col>
 									      	<Col sm="12">
-									      		<img src="../img/us-uk-itunes-store-get-badge-rgb-012618.svg" width="11%" height="11%" style={{padding: '7px', verticalAlign: 'middle'}}/>
+									      		<a href="http://bit.ly/highsandlows-apple">
+										      		<img src="../img/us-uk-itunes-store-get-badge-rgb-012618.svg" width="11%" height="11%" style={{padding: '7px', verticalAlign: 'middle'}}/>
+										      	</a>
 									      	</Col>
 									      	<Col sm="12">
-									      		<img src="../img/amazon-logo-grey.png" width="11%" height="11%"style={{padding: '6px', verticalAlign: 'middle'}}/>
+									      		<a href="http://bit.ly/highsandlows-amazon">
+										      		<img src="../img/amazon-logo-grey.png" width="11%" height="11%"style={{padding: '6px', verticalAlign: 'middle'}}/>
+										      	</a>
 									      	</Col>
 									      	<Col sm="12">
-									      		<img src="../img/us-uk-apple-music-lockup-all-white.svg" width="11%" height="11%" style={{padding: '7px', verticalAlign: 'middle'}}/>
+									      		<a href="http://bit.ly/highsandlows-apple">
+										      		<img src="../img/us-uk-apple-music-lockup-all-white.svg" width="11%" height="11%" style={{padding: '7px', verticalAlign: 'middle'}}/>
+										      	</a>
 									      	</Col>
 									      	<Col sm="12">
-									      		<img src="../img/bandcamp-logotype-light-128.png" width="12%" height="12%"style={{verticalAlign: 'middle'}}/>
+									      		<a href="http://bit.ly/highsandlows-album">
+										      		<img src="../img/bandcamp-logotype-light-128.png" width="12%" height="12%"style={{verticalAlign: 'middle'}}/>
+										      	</a>
 									      	</Col>
 									      	<Col sm="12">
-									      		<img src="../img/tidal-logo.png" width="10%" height="10%" style={{verticalAlign: 'middle'}}/>
+									      		<a href="http://bit.ly/highsandlows-tidal">
+										      		<img src="../img/tidal-logo.png" width="10%" height="10%" style={{verticalAlign: 'middle'}}/>
+										      	</a>
 									      	</Col>
 									      	<Col sm="12">
-										    		<iframe src="https://open.spotify.com/follow/1/?uri=spotify:artist:3qQ0Zv5eTJIbeAnSHyxXef?si=d2ty8sNTRg6N2Rm2v4-dLQ&size=detail&theme=dark" width="314" height="60" scrolling="no" frameBorder="0" style={{border: 'none', overflow: 'hidden'}} allowtransparency="true">
-										    		</iframe>
+										      	<iframe src="https://open.spotify.com/follow/1/?uri=spotify:artist:3qQ0Zv5eTJIbeAnSHyxXef?si=akYAhAGQRieE-8Rz0IQm7g&size=basic&theme=dark" width="200" height="30" scrolling="no" frameborder="0"  style={{border:'none', overflow: 'hidden'}} allowtransparency="true"></iframe>
 									      	</Col>
 								      	</div>
 									    </Parallax.Layer>
