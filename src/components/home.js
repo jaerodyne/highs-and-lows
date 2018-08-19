@@ -118,9 +118,9 @@ class Home extends Component {
 									<Row>
 										<Col sm="12">
 									    <Parallax.Layer
-								        offset={1.4}
+								        offset={1.6}
 								        speed={1.9}
-								        style={{backgroundColor: '#212529'}}
+								        style={{backgroundColor: '#212529', opacity: '0.9'}}
 								      >
 								      </Parallax.Layer>
 								    </Col>
