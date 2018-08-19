@@ -235,8 +235,8 @@ pre.lyrics {
   opacity: 0;
   position: absolute;
   margin-top: 10em;
-  left: 50%;
-  top: 50%;
+  left: 49%;
+  top: 52%;
   -webkit-transform-origin: 50% 50%;
           transform-origin: 50% 50%;
   -webkit-transform: translate3d(-50%, -50%, 0);

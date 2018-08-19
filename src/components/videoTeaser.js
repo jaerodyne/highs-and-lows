@@ -23,4 +23,5 @@ class VideoTeaser extends Component {
   }
 };
 
+// <div className="video-contain" onClick={() => this.parallax.scrollTo(1)}>
 export default VideoTeaser;
