@@ -152,6 +152,7 @@ class Home extends Component {
 								    <Parallax.Layer
 							        offset={0.9}
 							        speed={1.1}
+							        onClick={() => this.refs.parallax.scrollTo(1)}
 							      >
 							      	<div className="album-title-header">
 								     		<h1>Highs and Lows</h1>
@@ -185,33 +186,43 @@ class Home extends Component {
 									    >
 									    </Parallax.Layer>
 											<Parallax.Layer
-											    offset={1.5}
+											    offset={1.3}
 											    speed={1.1}
 									    >
 					    		    	<Col sm="12">
-					    	    			<a href="http://bit.ly/highsandlows-googleplay">
-					    	    	  		<img src="../img/google-play-badge.png" alt="Listen on Google Play" width="39%" height="39%" style={{padding: '6px'}}/>
-					    	    	  	</a>
+	    		    	    			<a href="http://bit.ly/highsandlows-amazon">
+	    		    	    	  		<img src="../img/amazon-logo-grey.png" alt="Listen on Amazon" width="35%" height="35%"style={{padding: '6px'}}/>
+	    		    		      	</a>
 					    	    		</Col>
 									    </Parallax.Layer>
 									    <Parallax.Layer
-											    offset={1.6}
+											    offset={1.46}
 											    speed={1.1}
 									    >
 									    	<Col sm="12">
 									    		<a href="http://bit.ly/highsandlows-itunes">
-									      		<img src="../img/us-uk-itunes-store-get-badge-rgb-012618.svg" alt="Get on iTunes" width="40%" height="40%" style={{padding: '7px'}}/>
+									      		<img src="../img/us-uk-itunes-store-get-badge-rgb-012618.svg" alt="Get on iTunes" width="35%" height="35%" style={{padding: '7px'}}/>
 									      	</a>
 									    	</Col>
 									    </Parallax.Layer>
 									    <Parallax.Layer
-											    offset={1.69}
+											    offset={1.58}
 											    speed={1.1}
 									    >
 									    	<Col sm="12">
 									    		<a href="http://bit.ly/highsandlows-applemusic">
-								    	  		<img src="../img/us-uk_apple_music_badge_rgb.svg" alt="Listen on Apple Music" width="40%" height="40%" style={{padding: '7px'}}/>
+								    	  		<img src="../img/us-uk_apple_music_badge_rgb.svg" alt="Listen on Apple Music" width="35%" height="35%" style={{padding: '7px'}}/>
 									      	</a>
+									    	</Col>
+									    </Parallax.Layer>
+									    <Parallax.Layer
+											    offset={1.7}
+											    speed={1.1}
+									    >
+									    	<Col sm="12">
+								    			<a href="http://bit.ly/highsandlows-googleplay">
+								    	  		<img src="../img/google-play-badge.png" alt="Listen on Google Play" width="35%" height="35%" style={{padding: '6px'}}/>
+								    	  	</a>
 									    	</Col>
 									    </Parallax.Layer>
 										</Col>
@@ -228,35 +239,45 @@ class Home extends Component {
 										</Col>
 										<Col md="4">
 									    <Parallax.Layer
-											    offset={1.5}
+											    offset={1.3}
 											    speed={1.1}
 									    >
-									    	<Col sm="12">
-								    			<a href="http://bit.ly/highsandlows-amazon">
-								    	  		<img src="../img/amazon-logo-grey.png" alt="Listen on Amazon" width="31%" height="31%"style={{padding: '6px'}}/>
+									    	<Col sm="12" style={{paddingLeft: '11px'}}>
+									    		<a href="http://bit.ly/highsandlows-album">
+									    	  	<img src="../img/bandcamp-logotype-light-128.png" alt="Listen on Bandcamp" width="45%" height="45%" />
 									      	</a>
 									    	</Col>
 									    </Parallax.Layer>
 									    <Parallax.Layer
-											    offset={1.6}
+											    offset={1.45}
 											    speed={1.1}
 									    >
-									    	<Col sm="12" style={{paddingLeft: '5px'}}>
-									    		<a href="http://bit.ly/highsandlows-album">
-									    	  	<img src="../img/bandcamp-logotype-light-128.png" alt="Listen on Bandcamp" width="40%" height="40%" />
+									    	<Col sm="12" style={{paddingLeft: '25px'}}>
+									    		<a href="http://bit.ly/highsandlows-pandora">
+								    	  		<img src="../img/pandora_wordmark_white.png" alt="Listen on Pandora" width="41%" height="41%" style={{padding: '7px'}}/>
 									      	</a>
 									    	</Col>
 									    </Parallax.Layer>
 									     <Parallax.Layer
-											    offset={1.69}
+											    offset={1.59}
 											    speed={1.1}
 									    >
-									    	<Col sm="12">
+									    	<Col sm="12" style={{paddingLeft: '25px'}}>
 									    		<a href="http://bit.ly/highsandlows-tidal">
-								    	  		<img src="../img/tidal-logo.png" alt="Listen on Tidal" width="35%" height="35%" />
+								    	  		<img src="../img/tidal-logo.png" alt="Listen on Tidal" width="40%" height="40%" />
 									      	</a>
 									    	</Col>
 									    </Parallax.Layer>
+						    	    <Parallax.Layer
+						    			    offset={1.7}
+						    			    speed={1.1}
+						    	    >
+						    	    	<Col sm="12" style={{paddingLeft: '25px'}}>
+						    	    		<a href="http://bit.ly/highsandlows-youtube">
+						        	  		<img src="../img/yt_logo_mono_dark.png" alt="Listen on Youtube" width="40%" height="40%" style={{padding: '7px'}}/>
+						    	      	</a>
+						    	    	</Col>
+						    	    </Parallax.Layer>
 										</Col>
 									</Row>
 
