@@ -172,7 +172,7 @@ class Home extends Component {
 									    offset={1.1}
 									    speed={1.1}
 								    >
-											<Col sm="12" style={{marginLeft: '15px'}}>
+											<Col sm="12" style={{marginLeft: '20px'}}>
 												<h1 className="text-center" style={{color: 'white'}}>DEBUT ALBUM AVAILABLE NOW</h1>	
 												<h2 className="text-center" style={{color: 'white'}}>ON ALL MAJOR STREAMING PLATFORMS</h2>	
 				    	    		</Col>
@@ -229,12 +229,12 @@ class Home extends Component {
 										</Col>
 										<Col md="4" className="text-center">
 									    <Parallax.Layer
-										    offset={1.25}
+										    offset={1.27}
 										    speed={1}
 									    >
 									    	<div>
 									    		<iframe src="https://open.spotify.com/embed?uri=spotify:album:76UmyyHrUavg49MOzx77wE" width="350" height="410" frameBorder="0" allowtransparency="true" allow="encrypted-media" title="highs-and-lows-spotify"></iframe>
-									    		<iframe src="https://open.spotify.com/follow/1/?uri=spotify:artist:3qQ0Zv5eTJIbeAnSHyxXef?si=Z8ivcjfHTMKoPb0eRCx6wg&size=detail&theme=dark" width="350" height="56" scrolling="no" frameBorder="0" style={{border:'none', overflow:'hidden'}} allowtransparency="true"></iframe>
+									    		<iframe src="https://open.spotify.com/follow/1/?uri=spotify:artist:3qQ0Zv5eTJIbeAnSHyxXef?si=Z8ivcjfHTMKoPb0eRCx6wg&size=detail&theme=dark" width="350" height="56" scrolling="no" frameBorder="0" style={{border:'none', marginTop: '20px', overflow:'hidden'}} allowtransparency="true"></iframe>
 									    	</div>
 									    </Parallax.Layer>
 										</Col>
@@ -249,18 +249,8 @@ class Home extends Component {
 									      	</a>
 									    	</Col>
 									    </Parallax.Layer>
-									    <Parallax.Layer
-											    offset={1.45}
-											    speed={1.1}
-									    >
-									    	<Col sm="12" style={{paddingLeft: '25px'}}>
-									    		<a href="http://bit.ly/highsandlows-pandora">
-								    	  		<img src="../img/pandora_wordmark_white.png" alt="Listen on Pandora" width="41%" height="41%" style={{padding: '7px'}}/>
-									      	</a>
-									    	</Col>
-									    </Parallax.Layer>
 									     <Parallax.Layer
-											    offset={1.59}
+											    offset={1.45}
 											    speed={1.1}
 									    >
 									    	<Col sm="12" style={{paddingLeft: '25px'}}>
@@ -270,7 +260,7 @@ class Home extends Component {
 									    	</Col>
 									    </Parallax.Layer>
 						    	    <Parallax.Layer
-						    			    offset={1.7}
+						    			    offset={1.56}
 						    			    speed={1.1}
 						    	    >
 						    	    	<Col sm="12" style={{paddingLeft: '25px'}}>
@@ -279,6 +269,15 @@ class Home extends Component {
 						    	      	</a>
 						    	    	</Col>
 						    	    </Parallax.Layer>
+									    <Parallax.Layer
+											    offset={1.7}
+											    speed={1.1}
+									    >
+									    	<Col sm="12" style={{paddingLeft: '25px'}}>
+							    	  		<img src="../img/pandora_wordmark_white.png" alt="Listen on Pandora" width="41%" height="41%" style={{opacity: '0.3', padding: '7px'}}/>
+							    	  		<span style={{color: 'white'}}>COMING SOON</span>
+									    	</Col>
+									    </Parallax.Layer>
 										</Col>
 									</Row>
 
