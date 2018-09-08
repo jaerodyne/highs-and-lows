@@ -114,17 +114,7 @@ class Home extends Component {
 											</Parallax.Layer>
 										</Col>
 									</Row>
-									
-									<Row>
-										<Col sm="12">
-									    <Parallax.Layer
-								        offset={1.6}
-								        speed={1.9}
-								        style={{backgroundColor: '#212529', opacity: '0.9'}}
-								      >
-								      </Parallax.Layer>
-								    </Col>
-						      </Row>
+
 									
 									<Row>
 										<Col sm="12">
@@ -148,6 +138,7 @@ class Home extends Component {
 									  </Col>
 									</Row>
 									
+
 									<Row>
 								    <Parallax.Layer
 							        offset={0.9}
@@ -161,8 +152,18 @@ class Home extends Component {
 									</Row>
 
 									<Row>
+										<Col md="12">
+											<Parallax.Layer offset={1} speed={0.7}>
+												<div className="bkgd-img">
+													<img src="../img/album-cover-background-2.jpg" alt=""/>
+												</div>
+											</Parallax.Layer>
+										</Col>
+									</Row>
+
+									<Row>
 										<Col sm="12">
-											<Parallax.Layer offset={1} speed={0.8} style={parallaxBkgd} />
+											<Parallax.Layer offset={1} speed={0.7} style={parallaxBkgd} />
 										</Col>
 									</Row>
 									
@@ -232,7 +233,7 @@ class Home extends Component {
 										    speed={1}
 									    >
 									    	<div>
-									    		<iframe src="https://open.spotify.com/embed?uri=spotify:album:76UmyyHrUavg49MOzx77wE" width="350" height="450" frameBorder="0" allowtransparency="true" allow="encrypted-media" title="highs-and-lows-spotify"></iframe>
+									    		<iframe src="https://open.spotify.com/embed?uri=spotify:album:76UmyyHrUavg49MOzx77wE" width="350" height="410" frameBorder="0" allowtransparency="true" allow="encrypted-media" title="highs-and-lows-spotify"></iframe>
 									    		<iframe src="https://open.spotify.com/follow/1/?uri=spotify:artist:3qQ0Zv5eTJIbeAnSHyxXef?si=Z8ivcjfHTMKoPb0eRCx6wg&size=detail&theme=dark" width="350" height="56" scrolling="no" frameBorder="0" style={{border:'none', overflow:'hidden'}} allowtransparency="true"></iframe>
 									    	</div>
 									    </Parallax.Layer>
