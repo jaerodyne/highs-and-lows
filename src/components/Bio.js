@@ -14,7 +14,7 @@ class Bio extends Component {
 					</p>
 					
 					<p>
-						To date, the band has performed at various venues around Chicago, such as The Wire, House of Blues Foundation Room, Bottom Lounge, and the Elbo Room. Their debut album, Highs and Lows, is available now on all streaming platforms. You can see them live next at their album release party on August 11th, 2018. Get your tickets <a href="http://bit.ly/jsbetaoption-presale">here</a>.
+						To date, the band has performed at various venues around Chicago, such as The Wire, House of Blues Foundation Room, Bottom Lounge, and the Elbo Room. Their debut album, Highs and Lows, is available now on all major streaming platforms. They are currently working on booking their first mini-tour around the midwest.
 					</p>
 				</div>
 			</div>

@@ -171,6 +171,7 @@ class Home extends Component {
 										<Parallax.Layer
 									    offset={1.1}
 									    speed={1.1}
+									    onClick={() => this.refs.parallax.scrollTo(2)}
 								    >
 											<Col sm="12" style={{marginLeft: '20px'}}>
 												<h1 className="text-center" style={{color: 'white'}}>DEBUT ALBUM AVAILABLE NOW</h1>	
