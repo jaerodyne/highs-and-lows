@@ -9,7 +9,6 @@
     "@fortawesome/react-fontawesome": "0.0.16",
     "bootstrap": "^4.0.0",
     "chart.js": "^2.7.1",
-    "material-ui": "^0.20.0",
     "moment": "^2.22.1",
     "react": "^16.6.3",
     "react-bottom-sheet": "^1.1.1",

@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 import Parallax from 'react-springy-parallax';
 import { Row, Col } from 'reactstrap';
 import Responsive from 'react-responsive';
@@ -100,218 +99,298 @@ class Home extends Component {
 			<div>
 				{this.state.viewTrack ? this.showTrack() 
 					:
-					<MuiThemeProvider>
-						<div>
-							<Desktop>
-								<Parallax ref="parallax" pages={4}>
+					<div>
+						<Desktop>
+							<Parallax ref="parallax" pages={4}>
+
+								<Row>
+									<Col md="12">
+										<Parallax.Layer offset={0.6} speed={0.6}>
+											<div className="bkgd-img">
+												<img src="../img/album-cover-background.jpg" alt=""/>
+											</div>
+										</Parallax.Layer>
+									</Col>
+								</Row>
+
+								
+								<Row>
+									<Col sm="12">
+										<Parallax.Layer
+							        offset={0}
+							        speed={2}
+							      >
+								      <VideoTeaser />
+								    </Parallax.Layer>
+									</Col>	
+							  </Row>
+								<Row>
+									<Col sm="12 text-center">
+								    <Parallax.Layer
+							        offset={0}
+							        speed={1.8}
+							        onClick={() => this.refs.parallax.scrollTo(0.4)}
+							      >
+											<VideoTeaserTitle />
+								    </Parallax.Layer>
+								  </Col>
+								</Row>
+								
+
+								<Row>
+							    <Parallax.Layer
+						        offset={0.9}
+						        speed={1.1}
+						        onClick={() => this.refs.parallax.scrollTo(1)}
+						      >
+						      	<div className="album-title-header">
+							     		<h1>Highs and Lows</h1>
+						      	</div>
+							    </Parallax.Layer>
+								</Row>
+
+								<Row>
+									<Col md="12">
+										<Parallax.Layer offset={1} speed={0.7}>
+											<div className="bkgd-img">
+												<img src="../img/album-cover-background-2.jpg" alt=""/>
+											</div>
+										</Parallax.Layer>
+									</Col>
+								</Row>
+
+								<Row>
+									<Col sm="12">
+										<Parallax.Layer offset={1} speed={0.7} style={parallaxBkgd} />
+									</Col>
+								</Row>
+								
+								<Row>
+									<Parallax.Layer
+								    offset={1.1}
+								    speed={1.1}
+								    onClick={() => this.refs.parallax.scrollTo(2)}
+							    >
+										<Col sm="12" style={{marginLeft: '20px'}}>
+											<h1 className="text-center" style={{color: 'white'}}>DEBUT ALBUM AVAILABLE NOW</h1>	
+											<h2 className="text-center" style={{color: 'white'}}>ON ALL MAJOR STREAMING PLATFORMS</h2>	
+			    	    		</Col>
+									</Parallax.Layer>
+								</Row>
+
+								<Row>
+									<Col md="4 text-right">
+										<Parallax.Layer
+										    offset={1.2}
+										    speed={1.1}
+								    >
+								    </Parallax.Layer>
+										<Parallax.Layer
+										    offset={1.3}
+										    speed={1.1}
+								    >
+				    		    	<Col sm="12">
+    		    	    			<a href="http://bit.ly/highsandlows-amazon">
+    		    	    	  		<img src="../img/amazon-logo-grey.png" alt="Listen on Amazon" width="35%" height="35%"style={{padding: '6px'}}/>
+    		    		      	</a>
+				    	    		</Col>
+								    </Parallax.Layer>
+								    <Parallax.Layer
+										    offset={1.46}
+										    speed={1.1}
+								    >
+								    	<Col sm="12">
+								    		<a href="http://bit.ly/highsandlows-itunes">
+								      		<img src="../img/us-uk-itunes-store-get-badge-rgb-012618.svg" alt="Get on iTunes" width="35%" height="35%" style={{padding: '7px'}}/>
+								      	</a>
+								    	</Col>
+								    </Parallax.Layer>
+								    <Parallax.Layer
+										    offset={1.58}
+										    speed={1.1}
+								    >
+								    	<Col sm="12">
+								    		<a href="http://bit.ly/highsandlows-applemusic">
+							    	  		<img src="../img/us-uk_apple_music_badge_rgb.svg" alt="Listen on Apple Music" width="35%" height="35%" style={{padding: '7px'}}/>
+								      	</a>
+								    	</Col>
+								    </Parallax.Layer>
+								    <Parallax.Layer
+										    offset={1.7}
+										    speed={1.1}
+								    >
+								    	<Col sm="12">
+							    			<a href="http://bit.ly/highsandlows-googleplay">
+							    	  		<img src="../img/google-play-badge.png" alt="Listen on Google Play" width="35%" height="35%" style={{padding: '6px'}}/>
+							    	  	</a>
+								    	</Col>
+								    </Parallax.Layer>
+									</Col>
+									<Col md="4" className="text-center">
+								    <Parallax.Layer
+									    offset={1.27}
+									    speed={1}
+								    >
+								    	<div>
+								    		<iframe src="https://open.spotify.com/embed?uri=spotify:album:76UmyyHrUavg49MOzx77wE" width="350" height="410" frameBorder="0" allowtransparency="true" allow="encrypted-media" title="highs-and-lows-spotify"></iframe>
+								    		<iframe src="https://open.spotify.com/follow/1/?uri=spotify:artist:3qQ0Zv5eTJIbeAnSHyxXef?si=Z8ivcjfHTMKoPb0eRCx6wg&size=detail&theme=dark" width="350" height="56" scrolling="no" frameBorder="0" style={{border:'none', marginTop: '20px', overflow:'hidden'}} allowtransparency="true"></iframe>
+								    	</div>
+								    </Parallax.Layer>
+									</Col>
+									<Col md="4">
+								    <Parallax.Layer
+										    offset={1.3}
+										    speed={1.1}
+								    >
+								    	<Col sm="12" style={{paddingLeft: '11px'}}>
+								    		<a href="http://bit.ly/highsandlows-album">
+								    	  	<img src="../img/bandcamp-logotype-light-128.png" alt="Listen on Bandcamp" width="45%" height="45%" />
+								      	</a>
+								    	</Col>
+								    </Parallax.Layer>
+								     <Parallax.Layer
+										    offset={1.45}
+										    speed={1.1}
+								    >
+								    	<Col sm="12" style={{paddingLeft: '25px'}}>
+								    		<a href="http://bit.ly/highsandlows-tidal">
+							    	  		<img src="../img/tidal-logo.png" alt="Listen on Tidal" width="40%" height="40%" />
+								      	</a>
+								    	</Col>
+								    </Parallax.Layer>
+					    	    <Parallax.Layer
+					    			    offset={1.56}
+					    			    speed={1.1}
+					    	    >
+					    	    	<Col sm="12" style={{paddingLeft: '25px'}}>
+					    	    		<a href="http://bit.ly/highsandlows-youtube">
+					        	  		<img src="../img/yt_logo_mono_dark.png" alt="Listen on Youtube" width="40%" height="40%" style={{padding: '7px'}}/>
+					    	      	</a>
+					    	    	</Col>
+					    	    </Parallax.Layer>
+								    <Parallax.Layer
+										    offset={1.7}
+										    speed={1.1}
+								    >
+								    	<Col sm="12" style={{paddingLeft: '25px'}}>
+						    	  		<img src="../img/pandora_wordmark_white.png" alt="Listen on Pandora" width="41%" height="41%" style={{opacity: '0.3', padding: '7px'}}/>
+						    	  		<span style={{color: 'white'}}>COMING SOON</span>
+								    	</Col>
+								    </Parallax.Layer>
+									</Col>
+								</Row>
+
+								<Row>
+									<Col sm="12">
+										<Parallax.Layer
+							        offset={2}
+							        speed={2}
+							      >
+								      <a href="https://www.songkick.com/artists/9718779" className="songkick-widget" data-theme="light" data-track-button="on" data-font-color="#212529">Jillian Somera and the Beta Option tour dates</a>
+								      <script src="//widget.songkick.com/9718779/widget.js"></script>
+								    </Parallax.Layer>
+									</Col>	
+							  </Row>
+
+								<Row className="bio-row">
+									<Col sm="12" md="5" className="no-col-margin hide-album">
+								    <Parallax.Layer
+									    offset={3}
+									    speed={3}
+								     	onClick={() => this.refs.parallax.scrollTo(1)}
+								     	style={{backgroundColor: 'white'}}
+								    >
+								    	<div className="bio-album-cover">
+								    		<img src="../img/album-cover.jpg" alt=""/>
+								    	</div>
+								    </Parallax.Layer>
+									</Col>
+									<Col sm="12" md="7" className="no-col-margin bio-mobile">
+										<Parallax.Layer
+										    offset={3}
+										    speed={7}
+									     	style={{backgroundColor: 'white'}}
+								    >
+								    		<Bio />
+								    </Parallax.Layer>
+									</Col>
+								</Row>
+
+								<Row className="footer-row">
+									<Parallax.Layer
+										offset={3.7}
+										speed={1}
+									>
+										<Footer />
+									</Parallax.Layer>
+								</Row>
+							
+							</Parallax>
+							<div className="float-right">
+								<Row className="subscribe float-right">
+									
+								</Row>
+							</div>
+							
+						</Desktop>
+
+						<Tablet>
+								<Parallax ref="parallax" pages={2} style={parallaxBkgd}>
 
 									<Row>
 										<Col md="12">
-											<Parallax.Layer offset={0.6} speed={0.6}>
-												<div className="bkgd-img">
-													<img src="../img/album-cover-background.jpg" alt=""/>
-												</div>
+											<Parallax.Layer
+								        offset={0.5}
+								        speed={1.8}
+								        className="tablet-title-bkgd"
+								      >
 											</Parallax.Layer>
 										</Col>
 									</Row>
 
-									
 									<Row>
-										<Col sm="12">
-											<Parallax.Layer
-								        offset={0}
-								        speed={2}
-								      >
-									      <VideoTeaser />
-									    </Parallax.Layer>
-										</Col>	
-								  </Row>
-									<Row>
-										<Col sm="12 text-center">
+										<Col md="12 text-center">
 									    <Parallax.Layer
 								        offset={0}
 								        speed={1.8}
-								        onClick={() => this.refs.parallax.scrollTo(0.4)}
 								      >
 												<VideoTeaserTitle />
 									    </Parallax.Layer>
 									  </Col>
 									</Row>
-									
-
-									<Row>
-								    <Parallax.Layer
-							        offset={0.9}
-							        speed={1.1}
-							        onClick={() => this.refs.parallax.scrollTo(1)}
-							      >
-							      	<div className="album-title-header">
-								     		<h1>Highs and Lows</h1>
-							      	</div>
-								    </Parallax.Layer>
-									</Row>
 
 									<Row>
 										<Col md="12">
-											<Parallax.Layer offset={1} speed={0.7}>
+											<Parallax.Layer offset={0.99} speed={0.6}>
 												<div className="bkgd-img">
-													<img src="../img/album-cover-background-2.jpg" alt=""/>
+													<img src="../img/album-cover.jpg" alt=""/>
 												</div>
 											</Parallax.Layer>
 										</Col>
 									</Row>
-
+										
 									<Row>
-										<Col sm="12">
-											<Parallax.Layer offset={1} speed={0.7} style={parallaxBkgd} />
+										<Col md="12">
+											<Parallax.Layer offset={1} speed={0.7} className="bkgd-bio" />
 										</Col>
 									</Row>
-									
-									<Row>
-										<Parallax.Layer
-									    offset={1.1}
-									    speed={1.1}
-									    onClick={() => this.refs.parallax.scrollTo(2)}
-								    >
-											<Col sm="12" style={{marginLeft: '20px'}}>
-												<h1 className="text-center" style={{color: 'white'}}>DEBUT ALBUM AVAILABLE NOW</h1>	
-												<h2 className="text-center" style={{color: 'white'}}>ON ALL MAJOR STREAMING PLATFORMS</h2>	
-				    	    		</Col>
-										</Parallax.Layer>
-									</Row>
-
-									<Row>
-										<Col md="4 text-right">
-											<Parallax.Layer
-											    offset={1.2}
-											    speed={1.1}
-									    >
-									    </Parallax.Layer>
-											<Parallax.Layer
-											    offset={1.3}
-											    speed={1.1}
-									    >
-					    		    	<Col sm="12">
-	    		    	    			<a href="http://bit.ly/highsandlows-amazon">
-	    		    	    	  		<img src="../img/amazon-logo-grey.png" alt="Listen on Amazon" width="35%" height="35%"style={{padding: '6px'}}/>
-	    		    		      	</a>
-					    	    		</Col>
-									    </Parallax.Layer>
-									    <Parallax.Layer
-											    offset={1.46}
-											    speed={1.1}
-									    >
-									    	<Col sm="12">
-									    		<a href="http://bit.ly/highsandlows-itunes">
-									      		<img src="../img/us-uk-itunes-store-get-badge-rgb-012618.svg" alt="Get on iTunes" width="35%" height="35%" style={{padding: '7px'}}/>
-									      	</a>
-									    	</Col>
-									    </Parallax.Layer>
-									    <Parallax.Layer
-											    offset={1.58}
-											    speed={1.1}
-									    >
-									    	<Col sm="12">
-									    		<a href="http://bit.ly/highsandlows-applemusic">
-								    	  		<img src="../img/us-uk_apple_music_badge_rgb.svg" alt="Listen on Apple Music" width="35%" height="35%" style={{padding: '7px'}}/>
-									      	</a>
-									    	</Col>
-									    </Parallax.Layer>
-									    <Parallax.Layer
-											    offset={1.7}
-											    speed={1.1}
-									    >
-									    	<Col sm="12">
-								    			<a href="http://bit.ly/highsandlows-googleplay">
-								    	  		<img src="../img/google-play-badge.png" alt="Listen on Google Play" width="35%" height="35%" style={{padding: '6px'}}/>
-								    	  	</a>
-									    	</Col>
-									    </Parallax.Layer>
-										</Col>
-										<Col md="4" className="text-center">
-									    <Parallax.Layer
-										    offset={1.27}
-										    speed={1}
-									    >
-									    	<div>
-									    		<iframe src="https://open.spotify.com/embed?uri=spotify:album:76UmyyHrUavg49MOzx77wE" width="350" height="410" frameBorder="0" allowtransparency="true" allow="encrypted-media" title="highs-and-lows-spotify"></iframe>
-									    		<iframe src="https://open.spotify.com/follow/1/?uri=spotify:artist:3qQ0Zv5eTJIbeAnSHyxXef?si=Z8ivcjfHTMKoPb0eRCx6wg&size=detail&theme=dark" width="350" height="56" scrolling="no" frameBorder="0" style={{border:'none', marginTop: '20px', overflow:'hidden'}} allowtransparency="true"></iframe>
-									    	</div>
-									    </Parallax.Layer>
-										</Col>
-										<Col md="4">
-									    <Parallax.Layer
-											    offset={1.3}
-											    speed={1.1}
-									    >
-									    	<Col sm="12" style={{paddingLeft: '11px'}}>
-									    		<a href="http://bit.ly/highsandlows-album">
-									    	  	<img src="../img/bandcamp-logotype-light-128.png" alt="Listen on Bandcamp" width="45%" height="45%" />
-									      	</a>
-									    	</Col>
-									    </Parallax.Layer>
-									     <Parallax.Layer
-											    offset={1.45}
-											    speed={1.1}
-									    >
-									    	<Col sm="12" style={{paddingLeft: '25px'}}>
-									    		<a href="http://bit.ly/highsandlows-tidal">
-								    	  		<img src="../img/tidal-logo.png" alt="Listen on Tidal" width="40%" height="40%" />
-									      	</a>
-									    	</Col>
-									    </Parallax.Layer>
-						    	    <Parallax.Layer
-						    			    offset={1.56}
-						    			    speed={1.1}
-						    	    >
-						    	    	<Col sm="12" style={{paddingLeft: '25px'}}>
-						    	    		<a href="http://bit.ly/highsandlows-youtube">
-						        	  		<img src="../img/yt_logo_mono_dark.png" alt="Listen on Youtube" width="40%" height="40%" style={{padding: '7px'}}/>
-						    	      	</a>
-						    	    	</Col>
-						    	    </Parallax.Layer>
-									    <Parallax.Layer
-											    offset={1.7}
-											    speed={1.1}
-									    >
-									    	<Col sm="12" style={{paddingLeft: '25px'}}>
-							    	  		<img src="../img/pandora_wordmark_white.png" alt="Listen on Pandora" width="41%" height="41%" style={{opacity: '0.3', padding: '7px'}}/>
-							    	  		<span style={{color: 'white'}}>COMING SOON</span>
-									    	</Col>
-									    </Parallax.Layer>
-										</Col>
-									</Row>
-
-									<Row>
-										<Col sm="12">
-											<Parallax.Layer
-								        offset={2}
-								        speed={2}
-								      >
-									      <a href="https://www.songkick.com/artists/9718779" className="songkick-widget" data-theme="light" data-track-button="on" data-font-color="#212529">Jillian Somera and the Beta Option tour dates</a>
-									      <script src="//widget.songkick.com/9718779/widget.js"></script>
-									    </Parallax.Layer>
-										</Col>	
-								  </Row>
 
 									<Row className="bio-row">
-										<Col sm="12" md="5" className="no-col-margin hide-album">
+										<Col md="12" className="no-col-margin hide-album">
 									    <Parallax.Layer
-										    offset={3}
+										    offset={1}
 										    speed={3}
-									     	onClick={() => this.refs.parallax.scrollTo(1)}
-									     	style={{backgroundColor: 'white'}}
+									     	onClick={() => this.refs.parallax.scrollTo(0)}
 									    >
 									    	<div className="bio-album-cover">
 									    		<img src="../img/album-cover.jpg" alt=""/>
 									    	</div>
 									    </Parallax.Layer>
 										</Col>
-										<Col sm="12" md="7" className="no-col-margin bio-mobile">
+										<Col md="12" className="no-col-margin bio-mobile">
 											<Parallax.Layer
-											    offset={3}
+											    offset={1.19}
 											    speed={7}
-										     	style={{backgroundColor: 'white'}}
 									    >
 									    		<Bio />
 									    </Parallax.Layer>
@@ -320,148 +399,66 @@ class Home extends Component {
 
 									<Row className="footer-row">
 										<Parallax.Layer
-											offset={3.7}
+											offset={1.6}
 											speed={1}
 										>
 											<Footer />
 										</Parallax.Layer>
 									</Row>
 								
-								</Parallax>
-								<div className="float-right">
-									<Row className="subscribe float-right">
-										
-									</Row>
-								</div>
-								
-							</Desktop>
+								</Parallax>	
+						</Tablet>
 
-							<Tablet>
-									<Parallax ref="parallax" pages={2} style={parallaxBkgd}>
-
-										<Row>
-											<Col md="12">
-												<Parallax.Layer
-									        offset={0.5}
-									        speed={1.8}
-									        className="tablet-title-bkgd"
-									      >
-												</Parallax.Layer>
-											</Col>
-										</Row>
-
-										<Row>
-											<Col md="12 text-center">
-										    <Parallax.Layer
-									        offset={0}
-									        speed={1.8}
-									      >
-													<VideoTeaserTitle />
-										    </Parallax.Layer>
-										  </Col>
-										</Row>
-
-										<Row>
-											<Col md="12">
-												<Parallax.Layer offset={0.99} speed={0.6}>
-													<div className="bkgd-img">
-														<img src="../img/album-cover.jpg" alt=""/>
-													</div>
-												</Parallax.Layer>
-											</Col>
-										</Row>
-											
-										<Row>
-											<Col md="12">
-												<Parallax.Layer offset={1} speed={0.7} className="bkgd-bio" />
-											</Col>
-										</Row>
-
-										<Row className="bio-row">
-											<Col md="12" className="no-col-margin hide-album">
-										    <Parallax.Layer
-											    offset={1}
-											    speed={3}
-										     	onClick={() => this.refs.parallax.scrollTo(0)}
-										    >
-										    	<div className="bio-album-cover">
-										    		<img src="../img/album-cover.jpg" alt=""/>
-										    	</div>
-										    </Parallax.Layer>
-											</Col>
-											<Col md="12" className="no-col-margin bio-mobile">
-												<Parallax.Layer
-												    offset={1.19}
-												    speed={7}
-										    >
-										    		<Bio />
-										    </Parallax.Layer>
-											</Col>
-										</Row>
-
-										<Row className="footer-row">
-											<Parallax.Layer
-												offset={1.6}
-												speed={1}
-											>
-												<Footer />
-											</Parallax.Layer>
-										</Row>
-									
-									</Parallax>	
-							</Tablet>
-
-							<Mobile>
-								<Row>
-									<Col xs="12" className="mobile-background">
-								  	<VideoTeaserTitle/>
-									</Col>
-								</Row>
-								<Row>
-									<Col xs="12">
-								  	<div className="bio-album-cover">
-							    		<img src="../img/album-cover.jpg" alt=""/>
-							    	</div>
-									</Col>
-								</Row>
-	    	    		<h1>Listen Now</h1>
-								<Row>
-									<Col xs="12">
-										<iframe src="https://open.spotify.com/follow/1/?uri=spotify:artist:3qQ0Zv5eTJIbeAnSHyxXef?si=Z8ivcjfHTMKoPb0eRCx6wg&size=detail&theme=light" width="350" height="56" scrolling="no" frameBorder="0" style={{border:'none', marginLeft: '2em', overflow:'hidden'}} allowtransparency="true"></iframe>
-		    	    		</Col>
-		    	    	</Row>
-		    	    	<Row style={{marginTop: '1em'}}>
-									<Col xs={{ size: 4, offset: 1 }} style={{marginLeft: '3em', paddingLeft: '0', paddingRight: '0'}}>
-					    			<a href="http://bit.ly/highsandlows-googleplay">
-					    	  		<img src="../img/google-play-badge.png" alt="Listen on Google Play" width="100%" height="80%"/>
-					    	  	</a>
-						    	</Col>
-									<Col xs={{ size: 3}} style={{marginLeft: '0.8em', paddingRight: '15px'}}>
-						    		<a href="http://bit.ly/highsandlows-itunes">
-						      		<img src="../img/itunes-store-icon-blk.svg" alt="Get on iTunes" width="90%" height="80%"/>
-						      	</a>
-						    	</Col>
-									<Col xs="2" style={{padding: '0'}}>
-						    		<a href="http://bit.ly/highsandlows-applemusic">
-					    	  		<img src="../img/apple-music-icon-blk.svg" alt="Listen on Apple Music" width="90%" height="80%"/>
-						      	</a>
-						    	</Col>
-						    	<Col xs="2">
-						    	</Col>
-								</Row>
-								<Row>
-									<Col xs="12">
-										<Bio />
-									</Col>
-								</Row>
-								<Row className="footer-row">
-									<Col xs="12">
-										<Footer />
-									</Col>
-								</Row>
-							</Mobile>
-						</div>
-					</MuiThemeProvider>
+						<Mobile>
+							<Row>
+								<Col xs="12" className="mobile-background">
+							  	<VideoTeaserTitle/>
+								</Col>
+							</Row>
+							<Row>
+								<Col xs="12">
+							  	<div className="bio-album-cover">
+						    		<img src="../img/album-cover.jpg" alt=""/>
+						    	</div>
+								</Col>
+							</Row>
+    	    		<h1>Listen Now</h1>
+							<Row>
+								<Col xs="12">
+									<iframe src="https://open.spotify.com/follow/1/?uri=spotify:artist:3qQ0Zv5eTJIbeAnSHyxXef?si=Z8ivcjfHTMKoPb0eRCx6wg&size=detail&theme=light" width="350" height="56" scrolling="no" frameBorder="0" style={{border:'none', marginLeft: '2em', overflow:'hidden'}} allowtransparency="true"></iframe>
+	    	    		</Col>
+	    	    	</Row>
+	    	    	<Row style={{marginTop: '1em'}}>
+								<Col xs={{ size: 4, offset: 1 }} style={{marginLeft: '3em', paddingLeft: '0', paddingRight: '0'}}>
+				    			<a href="http://bit.ly/highsandlows-googleplay">
+				    	  		<img src="../img/google-play-badge.png" alt="Listen on Google Play" width="100%" height="80%"/>
+				    	  	</a>
+					    	</Col>
+								<Col xs={{ size: 3}} style={{marginLeft: '0.8em', paddingRight: '15px'}}>
+					    		<a href="http://bit.ly/highsandlows-itunes">
+					      		<img src="../img/itunes-store-icon-blk.svg" alt="Get on iTunes" width="90%" height="80%"/>
+					      	</a>
+					    	</Col>
+								<Col xs="2" style={{padding: '0'}}>
+					    		<a href="http://bit.ly/highsandlows-applemusic">
+				    	  		<img src="../img/apple-music-icon-blk.svg" alt="Listen on Apple Music" width="90%" height="80%"/>
+					      	</a>
+					    	</Col>
+					    	<Col xs="2">
+					    	</Col>
+							</Row>
+							<Row>
+								<Col xs="12">
+									<Bio />
+								</Col>
+							</Row>
+							<Row className="footer-row">
+								<Col xs="12">
+									<Footer />
+								</Col>
+							</Row>
+						</Mobile>
+					</div>
 				}
 			</div>
 		)
