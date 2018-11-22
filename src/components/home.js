@@ -103,7 +103,7 @@ class Home extends Component {
 					<MuiThemeProvider>
 						<div>
 							<Desktop>
-								<Parallax ref="parallax" pages={3}>
+								<Parallax ref="parallax" pages={4}>
 
 									<Row>
 										<Col md="12">
@@ -282,10 +282,22 @@ class Home extends Component {
 										</Col>
 									</Row>
 
+									<Row>
+										<Col sm="12">
+											<Parallax.Layer
+								        offset={2}
+								        speed={2}
+								      >
+									      <a href="https://www.songkick.com/artists/9718779" className="songkick-widget" data-theme="light" data-track-button="on" data-font-color="#212529">Jillian Somera and the Beta Option tour dates</a>
+									      <script src="//widget.songkick.com/9718779/widget.js"></script>
+									    </Parallax.Layer>
+										</Col>	
+								  </Row>
+
 									<Row className="bio-row">
 										<Col sm="12" md="5" className="no-col-margin hide-album">
 									    <Parallax.Layer
-										    offset={2}
+										    offset={3}
 										    speed={3}
 									     	onClick={() => this.refs.parallax.scrollTo(1)}
 									     	style={{backgroundColor: 'white'}}
@@ -297,7 +309,7 @@ class Home extends Component {
 										</Col>
 										<Col sm="12" md="7" className="no-col-margin bio-mobile">
 											<Parallax.Layer
-											    offset={2}
+											    offset={3}
 											    speed={7}
 										     	style={{backgroundColor: 'white'}}
 									    >
@@ -308,7 +320,7 @@ class Home extends Component {
 
 									<Row className="footer-row">
 										<Parallax.Layer
-											offset={2.7}
+											offset={3.7}
 											speed={1}
 										>
 											<Footer />
