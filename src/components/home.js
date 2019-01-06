@@ -297,7 +297,7 @@ class Home extends Component {
 								  <Col sm="12">
 										<Parallax.Layer
 							        offset={2.14}
-							        speed={5}
+							        speed={1}
 							      >
 							      	<div className="show-dates-bkgd">
 								      	<img src="../img/album-show-recap.jpg" alt=""/>
@@ -309,7 +309,7 @@ class Home extends Component {
 									<Col sm={{size: 8, offset: 2}}>
 										<Parallax.Layer
 							        offset={2.29}
-							        speed={0.1}
+							        speed={0.9}
 							      >
 								      <a href="https://www.songkick.com/artists/9718779" class="songkick-widget" data-theme="dark" data-track-button="on" data-detect-style="true" data-background-color="transparent" data-font-color="#eeeded">Show Dates</a>
 								      <Script
@@ -318,6 +318,16 @@ class Home extends Component {
 			                  onError={this.handleScriptError.bind(this)}
 			                  onLoad={this.handleScriptLoad.bind(this)}
 			                />
+								    </Parallax.Layer>
+									</Col>
+							  </Row>
+							  <Row>
+								  <Col sm="12" style={{marginTop: '-10px`'}}>
+										<Parallax.Layer
+							        offset={3}
+							        speed={1}
+							        style={{backgroundColor: 'white'}}
+							      >
 								    </Parallax.Layer>
 									</Col>
 							  </Row>

@@ -4,6 +4,8 @@ body {
   font-family: 'Barlow' !important;
   padding: 0;
   font-size: 42px;
+  background: url("/img/press-photo-jsbetaoption.jpg");
+  /*background-position: center;*/
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -117,7 +119,6 @@ pre.lyrics {
 
 .show-dates-bkgd img {
   width: 100%;
-  opacity: 0.9;
 }
 
 .bio-album-cover {
