@@ -322,7 +322,7 @@ class Home extends Component {
 									</Col>
 							  </Row>
 							  <Row>
-								  <Col sm="12" style={{marginTop: '-10px`'}}>
+								  <Col sm="12" style={{marginTop: '-10px'}}>
 										<Parallax.Layer
 							        offset={3}
 							        speed={1}
