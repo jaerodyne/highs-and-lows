@@ -115,6 +115,11 @@ pre.lyrics {
   padding: 4em 0 4em 0 !important;
 }
 
+.show-dates-bkgd img {
+  width: 100%;
+  opacity: 0.9;
+}
+
 .bio-album-cover {
   text-align: right;
 }
@@ -139,13 +144,13 @@ pre.lyrics {
 }
 
 .bio {
-  padding: 1em 4em 1em 4em;
+  padding: 0 4em 1em 4em;
 }
 
 .bio-text {
   font-family: 'Raleway', sans-serif;
   font-size: 14px;
-  padding: 1em 4em 1em 4em;
+  padding: 0 2em 1em 2em;
 }
 
 .footer {

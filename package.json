@@ -37,5 +37,11 @@
   },
   "devDependencies": {
     "case-sensitive-paths-webpack-plugin": "^2.1.2"
-  }
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ]
 }

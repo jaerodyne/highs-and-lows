@@ -10,7 +10,7 @@ const Footer = () => {
 					<li><a href="https://open.spotify.com/album/76UmyyHrUavg49MOzx77wE?si=abq_xRcXSiS_V5EubARiJg"><FontAwesomeIcon icon={["fab", "spotify"]}/></a></li>
 					<li><a href="https://www.youtube.com/watch?v=-VtJDn4VXlc&list=PLzhsZ7gBote-41rL9qQU7bdAZo_Q6bPTd"><FontAwesomeIcon icon={["fab", "youtube"]} /></a></li>
 				</ul>
-				<p className="copyright">&#169;2018 Jillian Somera</p>
+				<p className="copyright">&#169;2019 Jillian Somera</p>
 			</div>
 		);
 };

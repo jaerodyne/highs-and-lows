@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Script from 'react-load-script'
 import Parallax from 'react-springy-parallax';
 import { Row, Col } from 'reactstrap';
 import Responsive from 'react-responsive';
@@ -89,6 +90,18 @@ class Home extends Component {
 		this.setState({viewTrack: null})
 	} 
 
+	handleScriptCreate() {
+    this.setState({ scriptLoaded: false })
+  }
+
+  handleScriptError() {
+    this.setState({ scriptError: true })
+  }
+
+  handleScriptLoad() {
+    this.setState({ scriptLoaded: true })
+  }
+
 	render() {
 		const parallaxBkgd = {
 			// backgroundColor: 'white'
@@ -107,7 +120,7 @@ class Home extends Component {
 									<Col md="12">
 										<Parallax.Layer offset={0.6} speed={0.6}>
 											<div className="bkgd-img">
-												<img src="../img/album-cover-background.jpg" alt=""/>
+												<img src="/img/album-cover-background.jpg" alt=""/>
 											</div>
 										</Parallax.Layer>
 									</Col>
@@ -167,8 +180,8 @@ class Home extends Component {
 								
 								<Row>
 									<Parallax.Layer
-								    offset={1.1}
-								    speed={1.1}
+								    offset={1.05}
+								    speed={4}
 								    onClick={() => this.refs.parallax.scrollTo(2)}
 							    >
 										<Col sm="12" style={{marginLeft: '20px'}}>
@@ -232,8 +245,8 @@ class Home extends Component {
 									    speed={1}
 								    >
 								    	<div>
-								    		<iframe src="https://open.spotify.com/embed?uri=spotify:album:76UmyyHrUavg49MOzx77wE" width="350" height="410" frameBorder="0" allowtransparency="true" allow="encrypted-media" title="highs-and-lows-spotify"></iframe>
-								    		<iframe src="https://open.spotify.com/follow/1/?uri=spotify:artist:3qQ0Zv5eTJIbeAnSHyxXef?si=Z8ivcjfHTMKoPb0eRCx6wg&size=detail&theme=dark" width="350" height="56" scrolling="no" frameBorder="0" style={{border:'none', marginTop: '20px', overflow:'hidden'}} allowtransparency="true"></iframe>
+								    		<iframe src="https://open.spotify.com/embed?uri=spotify:album:76UmyyHrUavg49MOzx77wE" width="350" height="360" frameBorder="0" allowtransparency="true" allow="encrypted-media" title="highs-and-lows-spotify"></iframe>
+								    		<iframe src="https://open.spotify.com/follow/1/?uri=spotify:artist:3qQ0Zv5eTJIbeAnSHyxXef?si=Z8ivcjfHTMKoPb0eRCx6wg&size=detail&theme=dark" width="350" height="56" scrolling="no" frameBorder="0" style={{border:'none', marginTop: '10px', overflow:'hidden'}} allowtransparency="true"></iframe>
 								    	</div>
 								    </Parallax.Layer>
 									</Col>
@@ -280,18 +293,34 @@ class Home extends Component {
 									</Col>
 								</Row>
 
-								<Row>
-									<Col sm="12">
+							  <Row>
+								  <Col sm="12">
 										<Parallax.Layer
-							        offset={2}
-							        speed={2}
+							        offset={2.14}
+							        speed={5}
 							      >
-								      <a href="https://www.songkick.com/artists/9718779" className="songkick-widget" data-theme="light" data-track-button="on" data-font-color="#212529">Jillian Somera and the Beta Option tour dates</a>
-								      <script src="//widget.songkick.com/9718779/widget.js"></script>
+							      	<div className="show-dates-bkgd">
+								      	<img src="../img/album-show-recap.jpg" alt=""/>
+							      	</div>
 								    </Parallax.Layer>
 									</Col>	
 							  </Row>
-
+								<Row style={{textAlign: 'center'}}>
+									<Col sm={{size: 8, offset: 2}}>
+										<Parallax.Layer
+							        offset={2.29}
+							        speed={0.1}
+							      >
+								      <a href="https://www.songkick.com/artists/9718779" class="songkick-widget" data-theme="dark" data-track-button="on" data-detect-style="true" data-background-color="transparent" data-font-color="#eeeded">Show Dates</a>
+								      <Script
+			                  url="//widget.songkick.com/9718779/widget.js"
+			                  onCreate={this.handleScriptCreate.bind(this)}
+			                  onError={this.handleScriptError.bind(this)}
+			                  onLoad={this.handleScriptLoad.bind(this)}
+			                />
+								    </Parallax.Layer>
+									</Col>
+							  </Row>
 								<Row className="bio-row">
 									<Col sm="12" md="5" className="no-col-margin hide-album">
 								    <Parallax.Layer
@@ -318,7 +347,7 @@ class Home extends Component {
 
 								<Row className="footer-row">
 									<Parallax.Layer
-										offset={3.7}
+										offset={3.65}
 										speed={1}
 									>
 										<Footer />
