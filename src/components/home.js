@@ -296,7 +296,7 @@ class Home extends Component {
 							  <Row>
 								  <Col sm="12">
 										<Parallax.Layer
-							        offset={2.14}
+							        offset={2.09}
 							        speed={1}
 							      >
 							      	<div className="show-dates-bkgd">
@@ -305,11 +305,11 @@ class Home extends Component {
 								    </Parallax.Layer>
 									</Col>	
 							  </Row>
-								<Row style={{textAlign: 'center'}}>
-									<Col sm={{size: 8, offset: 2}}>
+								<Row style={{textAlign: 'center', fontSize: '18px', marginRight: '15px'}}>
+									<Col sm={12}>
 										<Parallax.Layer
-							        offset={2.29}
-							        speed={0.9}
+							        offset={2.25}
+							        speed={0.1}
 							      >
 								      <a href="https://www.songkick.com/artists/9718779" class="songkick-widget" data-theme="dark" data-track-button="on" data-detect-style="true" data-background-color="transparent" data-font-color="#eeeded">Show Dates</a>
 								      <Script
