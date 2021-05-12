@@ -9,7 +9,7 @@
     "@fortawesome/react-fontawesome": "0.0.16",
     "ajv-keywords": "^3.2.0",
     "bootstrap": "^4.3.1",
-    "chart.js": "^2.7.3",
+    "chart.js": "^2.9.4",
     "jquery": "^3.4.1",
     "macaddress": "^0.2.9",
     "moment": "^2.22.1",
