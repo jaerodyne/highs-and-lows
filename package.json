@@ -27,7 +27,7 @@
     "reactstrap": "^5.0.0-beta.2",
     "sshpk": "^1.15.2",
     "tough-cookie": "^2.4.3",
-    "url-parse": "^1.4.4"
+    "url-parse": "^1.5.8"
   },
   "scripts": {
     "start": "react-scripts start",
