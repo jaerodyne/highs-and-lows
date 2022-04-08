@@ -12,7 +12,7 @@
     "chart.js": "^2.7.3",
     "jquery": "^3.4.1",
     "macaddress": "^0.2.9",
-    "moment": "^2.22.1",
+    "moment": "^2.29.2",
     "react": "^16.6.3",
     "react-bottom-sheet": "^1.1.1",
     "react-chartjs-2": "^2.6.4",
